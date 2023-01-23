@@ -1,0 +1,38 @@
+module Base {
+    model PossBottle {
+        mesh = PopBottle,
+        texture = WorldItems/PossSoda,
+	}
+
+	model PossBottleWorld {
+		mesh = WorldItems/EmptyPopBottle,
+		texture = WorldItems/PossSoda,
+		scale = 0.017,
+	}
+
+    item PossSoda {
+        DisplayCategory = Food,			
+		HungerChange = -5,
+		Weight = 0.8,
+		Type = Food,
+		UnhappyChange = 10,
+		ThirstChange = -100,
+		DisplayName = posssoda,
+		ReplaceOnUse = PopBottleEmpty,
+		Icon = PossSoda,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottlePlastic,
+        Carbohydrates = 69,
+        Proteins = 0,
+        Lipids = 0,
+        Calories = 420,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        StaticModel = PossBottle,
+        EatType = bottle,
+        WorldStaticModel = PossBottleWorld,
+        AttachmentType = WaterBottle,			
+        Tooltip = Tooltip_PossSoda,
+        Tags = LowAlcohol,
+	}
+}

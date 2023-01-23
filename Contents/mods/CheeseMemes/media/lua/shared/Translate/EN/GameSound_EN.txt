@@ -1,0 +1,18 @@
+GameSound_EN = {
+    GameSound_KatanyaHardingCrafting = "Metal banging",
+    GameSound_KatanyaHardingHit = "Female Zombie moaning why",
+    GameSound_CrowbarskiBreak = "Crystal's shattering",
+    GameSound_CreateMegaDolly1 = "A man screaming",
+    GameSound_CreateMegaDolly2 = "Thunder crashing",
+    GameSound_AxelRoseProc1 = "A Heavy Guitar Riff",
+    GameSound_AxelRoseProc2 = "A Heavy Guitar Riff",
+    GameSound_R4KSnoring = "A Man snoring",
+    GameSound_SamuelSwing = "A Vibrating sound",
+    GameSound_SamuelHit = "A vibrating hit",
+    GameSound_SamuelMoanFemale1 = "A female moaning",
+    GameSound_SamuelMoanFemale2 = "A female moaning",
+    GameSound_SamuelMoanFemale3 = "A female moaning",
+    GameSound_SamuelMoanMale1 = "A male moaning",
+    GameSound_SamuelMoanMale2 = "A male moaning",
+    GameSound_SamuelMoanMale3 = "A male moaning",
+}

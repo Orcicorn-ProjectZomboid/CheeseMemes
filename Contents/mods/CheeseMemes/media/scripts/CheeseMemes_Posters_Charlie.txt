@@ -1,0 +1,50 @@
+module Base {
+	model CharliePosterBook {
+        mesh = WorldItems/BookClosed,
+        texture = WorldItems/CharlieBook,
+        scale = 0.4,
+    }
+
+    item CharliePosterBook {
+	    DisplayCategory = Literature,
+		Weight = 0.5,
+		Type = Normal,
+		DisplayName = CharliePosterBook,
+		Icon = CharliePosterBook,
+		StaticModel = Book,
+		WorldStaticModel = CharliePosterBook,
+        Tooltip = Tooltip_CharliePosterBook,
+	}
+
+    item CharliePoster01 {
+        Type = Moveable,
+        Icon = PosterCharlie,
+        DisplayCategory = Poster,
+        Weight = 2.0,
+        DisplayName = CheesePosterCharlie01,
+        WorldObjectSprite = cheesememes_posters_01_22,
+        Tooltip = Tooltip_CharliePoster,
+    }
+
+    item CharliePoster02 {
+        Type = Moveable,
+        Icon = PosterCharlie,
+        DisplayCategory = Poster,
+        Weight = 2.0,
+        DisplayName = CheesePosterCharlie02,
+        WorldObjectSprite = cheesememes_posters_01_14,
+        Tooltip = Tooltip_CharliePoster,
+    }
+
+    recipe ConsumeCharliePosterBook {
+        Base.CharliePosterBook,
+        Result: Base.PileOfPosters,
+        RemoveResultItem:true,
+        Time: 240.0,
+        NeedToBeLearn: False,
+        Sound: OpenSeedPacket,
+        OnCreate: CheeseMemes.Recipes.PostersCharlie,
+        AnimNode: BlowTorchFloor,
+        Prop2: CharliePosterBook,
+    }
+}

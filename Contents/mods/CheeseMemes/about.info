@@ -1,0 +1,162 @@
+################################################
+##                                            ##
+##	  https://twitch.tv/RoyaleWithCheeseTV    ##
+##                                            ##
+################################################
+
+Player Textures
+	Changed all human models to be wearing G-Strings
+	Resolves an issue where underwear was visible under panties
+	Especially on males, but also on some female models
+
+Main Menu (if mod globally enabled)
+	When lightning flashes, Cheese can be seen in the window
+
+Streamer Profession 
+	- Comes with a SmallPP and Night Owl perks 
+	- Also +1 to Small Blunt (you know, because of the small PP)
+	- Start with Cheese & Jenny T-Shirts (based on sex)
+	- Males get gamer glasses (see items below)
+
+Katanya Harding
+	Looks like a sword but is a long blunt
+	Absolute shit damage, better at longblunt 5+
+	100% chance to cripple a zombie and make them a crawler
+	10% chance when crippling a female zombie she cries out "Whyyyyyyyy"
+	Can be crafted by taking a katana and blunting the blade with a hammer
+	Spawns after day 60 (just like katana) inside zombies
+	Does not spawn in loot containers
+
+Axel Rose
+	Half as much damage and crit as a fire axe
+	Twice as much durability than a fire axe
+	At low level axe skills, it takes more hits to kill
+	At high level axe skills, it still one hits
+	~1% chance on hit to melt faces (lights on fire)
+	Craftable using FireAxe, NoiseMaker and BlowTorch
+	Spawns after day 15 (just like axes) inside zombies
+	Does not spawn in loot containers
+
+Crowbarski
+	Only spawns in dead zombies after 10 days 
+	Immediately breaks on hit and creates glass on ground 
+	With Paper/Pen you can Create a Certificate of Authenticity 
+	- The last 4 digits of the Item ID determines it's value.
+	- Pretends to be xxxx of 10000 published. 
+	- Closer to 10000 you are, the less valuable it is
+	- ID x 4269 = Value (generally millions)
+	- If Broken, value automatically limited to 0
+	- A Certificate is generated in inventory with all the details
+
+Crowbarski Necklace 
+	Spawns in Jewelry and Antique stores
+	May also be hidden in plank stashes
+	Wearable jewelry with no effect
+	Tribute to Jenny
+
+R4K's Book
+	Only spawns in garbage cans 
+	Appears to be a gigachad book
+	When read immediately puts you to sleep 
+	When asleep, snoring can be heard for 5 tiles
+
+Poss Soda
+	Spawns generally anywhere Orange soda can spawn
+	Contains more drink and more calories but less hunger reduction
+	More than likely causes clothing to become wet from over hydration
+	Tribute to "!dammitposs" and their hydrate abuse
+
+Charlie's Legos
+	A box of legos that spawns in Toy/Gift Stores and Daycares
+	When opened produces 20 Bricks and an instruction manual 
+	When read, manual teaches you to make Charlie's Trophy #1 and #2
+	Manual very rarely spawns alone in a child's warddrope
+	When trophies are crafted, PAWS music plays to entertain your inner child
+	Both Trophies can be disassembled to return the original Bricks
+	Both Trophies can be placed on the ground or attached to backpacks
+
+Tiny Dolly
+	Spawns randomly in the world where regular Doll can spawn
+	Is backpack attachable
+
+Big Dolly 
+	Spawns very rarely in the world where regualr Doll can spawn 
+	Is backpack attachable
+	Can be crafted with regular dolls and Thread
+
+MECHA DOLLY 
+	Does not spawn in world 
+	Can only be crafted with corpses, metal working and big dollies 
+	Once placed in world, DEMANDS feedings of batteries
+	Dolly reacts to each feeding with pre-programmed voice lines
+	Very rarely, dolly will be pleased with your offering. Usually she's indifferent
+	- When pleased, dolly will grant you with a reward
+	- Rewards are 100% random and pulled from a list of every known item on the server
+
+Gamer Glasses
+	Spawns in Optomitrist and Child-like areas 
+	Never falls off, has 2 scratch defense to Eyes 
+	Improves combat efficienty by 0.01
+	Ocassionally makes you say stupid shit
+
+Branded T-Shirts 
+	Cheese and Jenny logo T-Shirts spawn in world
+	Clothing stores, bedrooms, crates, etc.
+
+David The Gnome
+	- He's sniffable if you're within 1 square tile of him
+	- He laughs when he's sniffed
+	- 90% of the time, minor emote and text 
+	- 10% of the time, loudly announce your degeneracy and get a little tipsy
+
+Remma The Rat 
+	- Stuffed Rat Plushie 
+	- Spawns same places as other animal plushies 
+	- Backpack compatible
+
+Edible Junk 
+	- Crayons and Toothpaste are now edible 
+	- Still maintains original functioanlity
+	- Reduces Hunger by 1
+
+Notable Dates
+	Some noteable dates are programmed to trigger at midnight
+	Just adds simple text above the player's head noting the day's significance
+
+Posters: Spiffo
+	Promotional Poster Package #1 contains generic spiffo posters 
+	- Only spawns in spiffo stores
+	- When unpacked you get "Merry Spiffmas", "Don't be Blue" and "Stay Warm"
+	Promotional Poster Package #2 contains aggressive spiffo posters 
+	- Spawns in GunStore cabinets 
+	- When unpacked has "Be Prepared" and "They're Coming"
+	Hit Vids rarely has 2 posters
+	- "Spiffo Gremlins"
+	- "Siffo Wick"
+
+Posters: Bill Murray
+	Teen Beat Magazine Spawns in Classrooms, magazine racks & kid rooms
+	- Magazine can be opened to extract a poster 
+	- 1 of 4 posters are randomly generated for you
+
+Posters: Movies 
+	A Box of posters may appear at HitVid stores 
+	Individual posters appear in VHS Crates and Hobbie spawns 
+	Harry Potter sometimes spawns in children's bedrooms
+
+Posters: Charlie 
+	A Photo Album contains 2 posters of Charlie 
+	Photo Album spawns in Living Room shelves and tables
+
+Posters: Cheese Art 
+	4 Different tabloids spawn in world
+	Each tabloid gives you 2 different posters for 8 total 
+	A "Backup: Cheese Art 1" CD exists in world 
+	- Can be used when standing near a computer 
+	- Power not required 
+	- Extracts all 8 posters into your inventory and not consumed 
+
+Text 
+	- Load screen text is changed 
+	- Shouts are changed
+	- Sneaking Shouts are changed 

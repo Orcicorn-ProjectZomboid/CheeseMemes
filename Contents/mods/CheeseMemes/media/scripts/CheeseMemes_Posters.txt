@@ -1,0 +1,26 @@
+module Base {
+    /* Common Items used in other Poster Sections */
+    
+    model BoxOfCheesePostersAnimation {
+        mesh = WorldItems/Tofu,
+        texture = WorldItems/BoxOfPosters,
+        scale = 1.0,
+    }
+
+    model BoxOfCheesePosters {
+        mesh = WorldItems/Tofu,
+        texture = WorldItems/BoxOfPosters,
+		scale = 1.25,
+    }
+
+    item PileOfPosters {
+        DisplayCategory = Junk,
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName = PileOfPosters,
+        Icon = PaperNapkins,
+        WorldStaticModel = PaperNapkins_Ground,
+        Tooltip = Tooltip_StopCheatingJenny,
+    }
+
+}

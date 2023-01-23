@@ -1,0 +1,107 @@
+module Base {
+	model AxelRose {
+		mesh = Weapons/2Handed/FireAxe,
+        texture = weapons/AxelRose,
+		attachment world {
+			offset = 0.0170 0.1730 -0.0070,
+			rotate = 180.0000 -21.0000 180.0000,
+		}
+	}
+
+	sound AxelRoseCrafting {
+		category = Item,
+		loop = true,
+		is3D = true,
+		clip {
+			file = media/sound/AxelRoseCrafting.ogg,
+			distanceMax = 2,
+			volume = 1.0,
+		}
+	}
+
+	sound AxelRoseProc1 {
+		category = Item,
+		loop = false,
+		is3D = true,
+		clip {
+			file = media/sound/AxelRoseProc1.ogg,
+			distanceMax = 5,
+			volume = 0.65,
+		}
+	}
+
+	sound AxelRoseProc2 {
+		category = Item,
+		loop = false,
+		is3D = true,
+		clip {
+			file = media/sound/AxelRoseProc2.ogg,
+			distanceMax = 5,
+			volume = 0.8,
+		}
+	}
+
+    item AxelRose {
+	    DisplayCategory = ToolWeapon,
+		MaxRange = 1.2,
+		WeaponSprite = AxelRose,
+		MinAngle = 0.72,
+		Type = Weapon,
+		MinimumSwingTime = 3.0,
+		KnockBackOnNoDeath = TRUE,
+		SwingAmountBeforeImpact = 0.002,
+		Categories = Axe,
+		ConditionLowerChanceOneIn = 35,
+		Weight = 4,
+		SplatNumber = 3,
+		PushBackMod = 0.3,
+		SubCategory = Swinging,
+		ConditionMax = 26,
+		MaxHitCount = 2,
+		DoorDamage =	35,
+		IdleAnim = Idle_Weapon2,
+		SwingAnim = Bat,
+		DisplayName = AxelRose,
+		MinRange = 0.61,
+		SwingTime = 3.0,
+		HitAngleMod = -30,
+		SplatSize = 5,
+		KnockdownMod = 2,
+		SplatBloodOnNoDeath	= TRUE,
+		Icon = AxelRose,
+		RunAnim	= Run_Weapon2,
+        TwoHandWeapon = TRUE,
+        DoorHitSound = AxeHit,
+		HitSound = AxeHit,
+		HitFloorSound = AxeHit,
+		SwingSound = AxeSwing,
+        BreakSound = AxeBreak,
+        TreeDamage = 35,
+        MetalValue = 120,
+        CriticalChance = 10,
+        CritDmgMultiplier = 2.5,
+        BaseSpeed = 1,
+        MinDamage =	0.4,
+        MaxDamage = 1,
+		WeaponLength = 0.38,
+		DamageCategory = Slash,
+		DamageMakeHole = TRUE,
+		AttachmentType = BigWeapon,
+		Tags = ChopTree;CutPlant,
+        Tooltip = Tooltip_AxelRose,
+    }
+
+	recipe ConvertToAxelRose {
+		Base.Axe,
+		destroy Base.BlowTorch=1,
+		Base.NoiseTrap,
+		Base.DuctTape=2,
+		Result: Base.AxelRose,
+		Time: 240.0,
+		NeedToBeLearn: False,
+		AnimNode: RipSheets,
+		Prop1: Base.DuctTape,
+		Prop2: Base.FireAxe,
+		Sound: AxelRoseCrafting,
+	}
+}

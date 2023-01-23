@@ -1,0 +1,63 @@
+module Base {
+    model BoxOfMoviePosters {
+        mesh = WorldItems/Tofu,
+        texture = WorldItems/BoxOfPostersMovie,
+		scale = 1.25,
+    }
+
+    model BoxOfMoviePostersAnimation {
+        mesh = WorldItems/Tofu,
+        texture = WorldItems/BoxOfPostersMovie,
+        scale = 1.0,
+    }
+
+    item CheesePosterMovie01 {
+        Type = Moveable,
+        Icon = PosterMovie,
+        DisplayCategory = Poster,
+        Weight = 2.0,
+        DisplayName = CheesePosterMovie01,
+        WorldObjectSprite = cheesememes_posters_01_20,
+    }
+    
+    item CheesePosterMovie02 {
+        Type = Moveable,
+        Icon = PosterMovie,
+        DisplayCategory = Poster,
+        Weight = 1.0,
+        DisplayName = CheesePosterSpiffo02,
+        WorldObjectSprite = cheesememes_posters_01_23,
+    }
+
+    item CheesePosterMovie03 {
+        Type = Moveable,
+        Icon = PosterMovie,
+        DisplayCategory = Poster,
+        Weight = 1.0,
+        DisplayName = CheesePosterSpiffo03,
+        WorldObjectSprite = cheesememes_posters_01_4,
+    }
+
+    item BoxOfMoviePromotional01 {
+        DisplayCategory = Item,
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	BoxOfMoviePromotional01,
+        Icon	=	BoxOfPostersMovie,
+        StaticModel = BoxOfMoviePosters,
+        WorldStaticModel = BoxOfMoviePosters,
+        Tooltip = Tooltip_PosterMovie,
+    }
+
+    recipe OpenBoxOfMoviePromotional01 {
+        Base.BoxOfMoviePromotional01, 
+        Result: Base.PileOfPosters,
+        Time: 90.0,
+        RemoveResultItem:true,
+        NeedToBeLearn: False,
+        Sound: ClothesRipping,
+        AnimNode: SawLog,
+        OnCreate: CheeseMemes.Recipes.PostersMovie1,
+        Prop2: BoxOfMoviePostersAnimation,
+    }
+}

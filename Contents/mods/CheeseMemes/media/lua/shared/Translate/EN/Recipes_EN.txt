@@ -1,0 +1,23 @@
+Recipe_EN = {
+    Recipe_ConvertToKatanyaHarding = "Blunt the blade",
+    Recipe_ConvertToAxelRose = "Melt some faces",
+    Recipe_CreateCrowbarskiCertificate = "Verify authenticity",
+
+    Recipe_OpenCharliesLegoBox = "Open box",
+    Recipe_MakeCharliesTrophy1 = "Build a trophy",
+    Recipe_MakeCharliesTrophy2 = "Build a super trophy",
+    Recipe_DisassembleCharliesTrophies = "Take apart",
+
+    Recipe_ConsumeBoxOfSpiffoPromotional01 = "Unpack promotional posters",
+    Recipe_ConsumeBoxOfSpiffoPromotional02 = "Unpack promotional posters",
+    Recipe_ConsumeMagazineOfBillMurray = "Remove poster",
+    Recipe_ConsumeCharliePosterBook = "Open and browse",
+    Recipe_ConsumeCheeseMagazine1 = "Read magazine",
+    Recipe_ConsumeCheeseMagazine2 = "Read magazine",
+    Recipe_ConsumeCheeseMagazine3 = "Read magazine",
+    Recipe_ConsumeCheeseMagazine4 = "Read magazine",
+    Recipe_ConsumeDiscCheese1 = "Extract posters (requires computer)",
+
+    Recipe_CreateBigDolly = "Combine into Mega Dolly",
+    Recipe_CreateMegaDolly = "Summon she who shall not be named",
+}

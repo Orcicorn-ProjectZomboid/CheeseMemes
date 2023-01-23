@@ -1,0 +1,123 @@
+module Base {
+    model CharliesLegoBox {
+		mesh = WorldItems/PaperclipBox,
+		texture = WorldItems/CharliesLegoBox,
+		scale = 1.8,
+    }
+
+	model CharliesLegoManual {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/CharliesLegoManual,
+        scale = 0.4,
+    }
+
+	model CharliesTrophy1 {
+		mesh = WorldItems/Bell,
+		texture = WorldItems/CharliesTrophy,
+		scale = 0.4,
+	}
+
+    model CharliesTrophy1Static {
+		mesh = WorldItems/CharliesTrophy1Static,
+		texture = WorldItems/CharliesTrophy,
+		scale = 0.01,
+	}
+
+    model CharliesTrophy2 {
+        mesh = WorldItems/Timer,
+		texture = WorldItems/CharliesTrophy,
+		scale = 0.6,
+    }
+    
+    model CharliesTrophy2Static {
+		mesh = WorldItems/CharliesTrophy2Static,
+		texture = WorldItems/CharliesTrophy,
+		scale = 0.01,
+	}
+
+    item CharliesLegoManual {
+        DisplayCategory = SkillBook,
+        Weight = 0.1,
+        Type = Literature,
+        DisplayName = CharliesLegoManual,
+        Icon = CharliesLegoManual,
+        TeachedRecipes = MakeCharliesTrophy1;MakeCharliesTrophy2;DisassembleCharliesTrophies,
+        ReplaceOnUse = CharliesLegoManual,
+        StaticModel = Magazine,
+        WorldStaticModel = CharliesLegoManual,
+    }
+
+    item CharliesLegoBox {
+        DisplayCategory = Junk,
+        Weight = 1.0,
+        Type = Normal,
+        DisplayName = CharliesLegoBox,
+        Icon = CharliesLegoBox,
+        WorldStaticModel = CharliesLegoBox,
+        Tooltip = Tooltip_CharliesLegoBox,
+    }
+
+    item CharliesTrophy1 {
+        DisplayCategory = Junk,
+        Weight = 0.8,
+        Type = Normal,
+        DisplayName = CharliesTrophy1,
+        Icon = CharliesTrophy1,
+        Tooltip = Tooltip_CharliesTrophy,
+        StaticModel = CharliesTrophy1Static,
+        WorldStaticModel = CharliesTrophy1,
+        AttachmentType = SpiffoPlushie,
+    }
+
+    item CharliesTrophy2 {
+        DisplayCategory = Junk,
+        Weight = 0.8,
+        Type = Normal,
+        DisplayName = CharliesTrophy2,
+        Icon = CharliesTrophy2,
+        Tooltip = Tooltip_CharliesTrophy,
+        StaticModel = CharliesTrophy2Static,
+        WorldStaticModel = CharliesTrophy2,
+        AttachmentType = SpiffoPlushie,
+    }
+
+    recipe OpenCharliesLegoBox {
+        Base.CharliesLegoBox,
+        Result: Base.Bricktoys,
+        RemoveResultItem:true,
+        Time: 60.0,
+        NeedToBeLearn: False,
+        Sound: ClothesRipping,
+        OnCreate: CheeseMemes.Recipes.CharliesLegoBox,
+    }
+
+    recipe MakeCharliesTrophy1 {
+        Base.Bricktoys=20,
+        Result: Base.CharliesTrophy1,
+        Time: 650.0,
+        MeedToBeLearn: True,
+        AnimNode: BuildLow,
+        Prop1: Base.Bricktoys,
+        Sound: Paws4,
+    }
+
+    recipe MakeCharliesTrophy2 {
+        Base.Bricktoys=20,
+        Result: Base.CharliesTrophy2,
+        Time: 650.0,
+        MeedToBeLearn: True,
+        AnimNode: BuildLow,
+        Prop1: Base.Bricktoys,
+        Sound: Paws1,
+    }
+
+    recipe DisassembleCharliesTrophies {
+        Base.CharliesTrophy1/Base.CharliesTrophy2,
+        Result:Base.Bricktoys=20,
+        Time: 120.0,
+        NeedToBeLearn: True,
+        AnimNode: Disassemble,
+        Prop2: Base.Bricktoys,
+    }
+
+}

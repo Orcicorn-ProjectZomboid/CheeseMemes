@@ -1,0 +1,19 @@
+module Base {
+    item CheesePosterZombie01 {
+        Type = Moveable,
+        Icon = PosterZombie,
+        DisplayCategory = Poster,
+        Weight = 2.0,
+        DisplayName = CheesePosterZombie01,
+        WorldObjectSprite = cheesememes_posters_01_6,
+    }
+    
+    item CheesePosterZombie02 {
+        Type = Moveable,
+        Icon = PosterZombie,
+        DisplayCategory = Poster,
+        Weight = 2.0,
+        DisplayName = CheesePosterZombie02,
+        WorldObjectSprite = cheesememes_posters_01_31,
+    }
+}

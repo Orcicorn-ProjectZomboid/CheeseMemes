@@ -1,0 +1,146 @@
+module Base {
+	model SamuelNightstick1 {
+		mesh = Weapons/1Handed/Nightstick,
+		attachment world {
+			offset = 0.0000 0.1630 0.0000,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+        scale = 0.5,
+	}
+
+    model SamuelNightstick {
+		mesh = Weapons/2Handed/BaseballBat,
+        texture = weapons/SamuelNightstick,
+		attachment world {
+			offset = 0.0000 0.2450 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+        scale = 0.5,
+	}
+
+    sound SamuelSwing {
+        category = Item,
+        clip {
+            file = media/sound/SamuelSwing.ogg,
+            volume = 2.0,
+        }
+    }
+
+    sound SamuelHit {
+        category = Item,
+        clip {
+            file = media/sound/SamuelHit.ogg,
+            volume = 2.0,
+        }
+    }
+
+    sound SamuelMoanFemale1 {
+        category = Zombie,
+        loop = false,
+        is3D = true, 
+        clip {
+            file = media/sound/SamuelMoanFemale1.ogg,
+            distanceMax = 2,
+            volume = 1.25,
+        }
+    }
+
+    sound SamuelMoanFemale2 {
+        category = Zombie,
+        loop = false,
+        is3D = true, 
+        clip {
+            file = media/sound/SamuelMoanFemale2.ogg,
+            distanceMax = 2,
+            volume = 1.25,
+        }
+    }
+
+    sound SamuelMoanFemale3 {
+        category = Zombie,
+        loop = false,
+        is3D = true, 
+        clip {
+            file = media/sound/SamuelMoanFemale3.ogg,
+            distanceMax = 2,
+            volume = 1.25,
+        }
+    }
+
+    sound SamuelMoanMale1 {
+        category = Zombie,
+        loop = false,
+        is3D = true, 
+        clip {
+            file = media/sound/SamuelMoanMale1.ogg,
+            distanceMax = 2,
+            volume = 1.0,
+        }
+    }
+
+    sound SamuelMoanMale2 {
+        category = Zombie,
+        loop = false,
+        is3D = true, 
+        clip {
+            file = media/sound/SamuelMoanMale2.ogg,
+            distanceMax = 2,
+            volume = 1.0,
+        }
+    }
+
+    sound SamuelMoanMale3 {
+        category = Zombie,
+        loop = false,
+        is3D = true, 
+        clip {
+            file = media/sound/SamuelMoanMale3.ogg,
+            distanceMax = 2,
+            volume = 1.0,
+        }
+    }
+
+    item SamuelNightstick {
+        DisplayCategory = Weapon,
+        MaxRange = 1.2,
+        WeaponSprite = SamuelNightstick,
+        MinAngle = 0.72,
+        Type = Weapon,
+        MinimumSwingTime = 2,
+        KnockBackOnNoDeath = FALSE,
+        SwingAmountBeforeImpact = 0.02,
+        Categories = SmallBlunt,
+        ConditionLowerChanceOneIn = 20,
+        Weight = 1.5,
+        SplatNumber = 1,
+        PushBackMod = 0.3,
+        SubCategory = Swinging,
+        ConditionMax = 15,
+        MaxHitCount = 2,
+        DoorDamage = 1,
+        SwingAnim = Bat,
+        DisplayName = samuelnightstick,
+        MinRange = 0.61,
+        SwingTime = 2,
+        KnockdownMod = 0,
+        SplatBloodOnNoDeath = FALSE,
+        Icon = SamuelNightstick,
+        RunAnim = Run_Weapon2,
+        IdleAnim = Idle_Weapon2,
+        BreakSound = NightstickBreak,
+        DoorHitSound = NightstickHit,
+		HitSound = SamuelHit,
+		HitFloorSound = NightstickHit,
+		SwingSound = SamuelSwing,
+        TreeDamage = 0,
+        CriticalChance = 25,
+        CritDmgMultiplier = 2,
+        MinDamage = 0.6,
+        MaxDamage = 1.1,
+        BaseSpeed = 1,
+        WeaponLength = 0.45,
+        AttachmentType = Nightstick,
+        Tooltip = Tooltip_SamuelNightstick,
+    }
+
+}

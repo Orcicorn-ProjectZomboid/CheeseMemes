@@ -1,0 +1,49 @@
+IGUI_EN = {
+    IGUI_ItemCat_Poster = "Poster",
+    IGUI_ItemCat_Rat = "Rat",
+
+    IGUI_PlayerText_Callout1New = "JENNY!",
+    IGUI_PlayerText_Callout2New = "HIYAAAAAAAAAAAAH!",
+    IGUI_PlayerText_Callout3New = "GET YOUR ASS OVER HERE",
+
+    IGUI_PlayerText_Callout1Sneak = "pssst, I'm a sneaky bitch",
+    IGUI_PlayerText_Callout2Sneak = "Ohhhhh baby dolly",
+    IGUI_PlayerText_Callout3Sneak = "here kitty kitty kitty",
+
+    IGUI_Crowbarski_Line00 = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+    IGUI_Crowbarski_Line01 = "~ CERTIFICATE OF AUTHENTICITY ~",
+    IGUI_Crowbarski_Line02 = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+    IGUI_Crowbarski_Line03 = "It is hereby certified that the Crowbarski Crystal described herein is 100% genuine and guaranteed to go up in value",
+    IGUI_Crowbarski_Line04 = "Crowbarski #%1 of 10,000",
+    IGUI_Crowbarski_Line05 = "Estimated value $%1.00 USD%2",
+    IGUI_Crowbarski_Line06 = "Verified %1",
+    IGUI_Crowbarski_Line07 = "Authenticity guaranteed by WHCD Inc https://wellhungchubbydudes.com/",
+
+    IGUI_R4KBook = "I was born on a cold Chi-caw-go night..",
+    IGUI_DammitPoss = "Dammit Poss!",
+
+    IGUI_MegaDolly = "IT'S ALIVVVEEE!!!!!!",
+    IGUI_MegaDollyFeed = "Feed",
+    IGUI_MegaDollyTooltip = "MECHA DOLLY DEMANDS BATTERIES... NOW!",
+    IGUI_MegaDollyLoot = "ALL HAIL MECHA-DOLLY",
+
+    IGUI_SniffDavid = "Sniff David",
+    IGUI_SniffDavidLine1 = "What am I doing with my life",
+    IGUI_SniffDavidLine2 = "Oh he smells like daisies",
+    IGUI_SniffDavidLine3 = "I should lick him...",
+    IGUI_SniffDavidLine4 = "I should stick to panties",
+    IGUI_SniffDavidLine5 = "Smells like grandma's closet",
+    IGUI_SniffDavidShout = "I AM A DEGENERATE GNOME SNIFFER",
+
+    IGUI_CheeseQuotes1 = "UP TOP!",
+    IGUI_CheeseQuotes2 = "Hiya Hiya HIYAAAAAAAAHHHHHH",
+    IGUI_CheeseQuotes3 = "JENNY, UP TOP!",
+    IGUI_CheeseQuotes4 = "Feel the Rogue coarsing through my weiner",
+    IGUI_CheeseQuotes5 = "I knew SOMEONE was watchign my videos",
+    IGUI_CheeseQuotes6 = "There's a couple, two, tree",
+    IGUI_CheeseQuotes7 = "Jenny... JENNY... JENNY!!!",
+    IGUI_CheeseQuotes8 = "I swing so HOARD",
+    IGUI_CheeseQuotes9 = "I'm getting fussy!",
+    IGUI_CheeseQuotes10 = "Not now, daddy's working",
+
+}

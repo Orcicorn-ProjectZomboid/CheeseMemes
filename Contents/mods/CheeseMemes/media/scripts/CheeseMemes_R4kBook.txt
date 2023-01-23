@@ -1,0 +1,32 @@
+module Base {
+    sound R4KSnoring {
+        category = Player,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/R4KSnoring.ogg,
+            distanceMax = 5,
+            volume = 1.25,
+        }
+    }
+
+	model R4KBookGround {
+        mesh = WorldItems/BookClosed,
+        texture = WorldItems/R4KBook,
+        scale = 0.4,
+    }
+
+    item R4ksbook {
+	    DisplayCategory = Literature,
+		Weight = 0.5,
+		Type = Literature,
+		UnhappyChange = -69,
+		DisplayName = r4ksbook,
+		StressChange = -69,
+		Icon = R4kBook,
+		BoredomChange = -69,
+		StaticModel = Book,
+		WorldStaticModel = R4KBookGround,
+        Tooltip = Tooltip_R4ksbook,
+	}
+}

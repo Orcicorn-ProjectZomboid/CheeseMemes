@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fileGuidTable>
+    <files>
+        <note>Crowbarski Crystal Necklace</note>
+        <path>media/clothing/clothingItems/necklace_crowbarskicrystal.xml</path>
+        <guid>8195517f-315e-4244-9418-bcd0d707389c</guid>
+    </files>
+    <files>
+        <note>Cheese Gamer Glasses</note>
+        <path>media/clothing/clothingItems/glasses_cheesegamer.xml</path>
+        <guid>0b78232f-d03e-4045-b919-ed2849350e80</guid>
+    </files>
+    <files>
+        <note>Royale With Cheese Logo T-Shirt</note>
+        <path>media/clothing/clothingItems/tshirt_royalewithcheese.xml</path>
+        <guid>26cc28e0-cf19-4b09-9483-9cc17bb66727</guid>
+    </files>
+    <files>
+        <note>Jenny Shakes Logo T-Shirt</note>
+        <path>media/clothing/clothingItems/tshirt_jennyshakes.xml</path>
+        <guid>bff5966c-8b17-4d58-bf25-2da1d3a812f7</guid>
+    </files>
+</fileGuidTable>

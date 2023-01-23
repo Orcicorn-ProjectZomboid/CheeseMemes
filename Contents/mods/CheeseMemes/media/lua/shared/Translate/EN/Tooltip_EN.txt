@@ -1,0 +1,39 @@
+Tooltip_EN = {
+    Tooltip_KatanyaHarding = ""Property of Jeff Gillooly"",
+    Tooltip_AxelRose = "Small chance to melt faces",
+    Tooltip_Crowbarski = "Who the fuck makes a crowbar out of crystal?!",
+    Tooltip_CrowbarskiNecklace = "Mutter meiner Kinder, Liebe meines Lebens",
+    Tooltip_SamuelNightstick = "Property of Shewolf",
+    Tooltip_R4ksbook = "A large-print memoire by r4k",
+    Tooltip_PossSoda = "Formerly Jyrka Cola",
+    Tooltip_CharliesLegoBox = "Complete with building instructions",
+    Tooltip_CharliesTrophy = "Show chat what I made. It's a Trophy!",
+    Tooltip_StopCheatingJenny = "Stop cheating Jenny! This item shouldn't spawn",
+
+    Tooltip_PosterSpiffo = "Authentic Spiffo Promotions. Not for resale.",
+    Tooltip_PosterMovie = "Promotional use only. Not for resale",
+    Tooltip_PosterBillMurray = "A Slightly sticky poster of Bill Murray",
+    Tooltip_PosterBillMurrayMagazine = "1993s hottest middle-aged stars",
+    
+    Tooltip_DiscCheese = "Insert into a Computer",
+    Tooltip_CheeseMagazine1 = "Hollywood's hottest beefcakes",
+    Tooltip_CheeseMagazine2 = "Special Mr. Plot edition",
+    Tooltip_CheeseMagazine3 = "Exclusive: Jenny's Alien Baby exposed",
+    Tooltip_CheeseMagazine4 = "Amerikanischer Perverser wandelt unter uns",
+
+    Tooltip_TinyDolly = "Awww, teeny dolly",
+    Tooltip_BigDolly = "Oh Shit! Mega Dolly!",
+    Tooltip_MegaDolly = "FEED ME BATTERY",
+
+    Tooltip_RemmyRat = "Property of GW";
+
+    Tooltip_CharliePosterBook = "Momma's Little Monster",
+    Tooltip_CharliePoster = "100% Authentic Tantrums",
+
+    Tooltip_CharlieToothpaste = "Does it go on the butt?",
+
+    Tooltip_GlassesCheeseGamer = "Courtesy of Ubisoft",
+
+    Tooltip_TShirtRoyaleWithCheese = "https://tinyurl.com/RoyaleMerch",
+    Tooltip_TShirtJennyShakes = "Wearer becomes immune to incessant nagging",
+}

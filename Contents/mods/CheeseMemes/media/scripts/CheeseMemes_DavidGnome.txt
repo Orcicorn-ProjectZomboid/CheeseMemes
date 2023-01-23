@@ -1,0 +1,12 @@
+module Base {
+    sound GnomeLaugh {
+		category = Item,
+		loop = false,
+		is3D = true,
+		clip {
+			file = media/sound/GnomeLaugh.ogg,
+			distanceMax = 2,
+			volume = 0.5,
+		}
+	}
+}

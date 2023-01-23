@@ -1,0 +1,237 @@
+module Base {
+    model TinyDolly {
+		mesh = WorldItems/Doll,
+		texture = WorldItems/Doll,
+		scale = 0.2,
+	}
+
+    model TinyDollyStatic {
+		mesh = WorldItems/TinyDollyStatic,
+		texture = WorldItems/Doll,
+		scale = 0.2,
+	}
+
+    model BigDolly {
+		mesh = WorldItems/Doll,
+		texture = WorldItems/Doll,
+		scale = 0.8,
+	}
+
+    model MegaDolly {
+		mesh = WorldItems/Doll,
+		texture = WorldItems/MechaDolly,
+		scale = 1.8,
+        attachment world {
+            rotate = -83.3 0 0,
+            offset = 0 0.295 0.217,
+        }
+	}
+
+    sound CreateMegaDolly1 {
+		category = Player,
+		loop = false,
+		is3D = true,
+		clip {
+			file = media/sound/scream3.ogg,
+			distanceMax = 8,
+			volume = 0.8,
+		}
+	}
+
+    sound CreateMegaDolly2 {
+		category = Player,
+		loop = false,
+		is3D = true,
+		clip {
+			file = media/sound/thunder2.wav,
+			distanceMax = 20,
+			volume = 1.2,
+		}
+	}
+
+    sound MegaDollyHappy1 {
+		category = Item,
+		loop = false,
+		is3D = true,
+		clip {
+			file = media/sound/MegaDollyHappy1.ogg,
+			distanceMax = 3,
+			volume = 1.0,
+		}
+	}
+
+    sound MegaDollyHappy2 {
+		category = Item,
+		loop = false,
+		is3D = true,
+		clip {
+			file = media/sound/MegaDollyHappy2.ogg,
+			distanceMax = 3,
+			volume = 1.0,
+		}
+	}
+
+    sound MegaDollyHappy3 {
+		category = Item,
+		loop = false,
+		is3D = true,
+		clip {
+			file = media/sound/MegaDollyHappy3.ogg,
+			distanceMax = 3,
+			volume = 1.0,
+		}
+	}
+
+    sound MegaDollyHappy4 {
+		category = Item,
+		loop = false,
+		is3D = true,
+		clip {
+			file = media/sound/MegaDollyHappy4.ogg,
+			distanceMax = 3,
+			volume = 1.0,
+		}
+	}
+
+    sound MegaDollyHappy5 {
+		category = Item,
+		loop = false,
+		is3D = true,
+		clip {
+			file = media/sound/MegaDollyHappy5.ogg,
+			distanceMax = 3,
+			volume = 1.0,
+		}
+	}
+
+    sound MegaDollyMore1 {
+		category = Item,
+		loop = false,
+		is3D = true,
+		clip {
+			file = media/sound/MegaDollyMore1.ogg,
+			distanceMax = 3,
+			volume = 1.0,
+		}
+	}
+
+    sound MegaDollyMore2 {
+		category = Item,
+		loop = false,
+		is3D = true,
+		clip {
+			file = media/sound/MegaDollyMore2.ogg,
+			distanceMax = 3,
+			volume = 1.0,
+		}
+	}
+
+    sound MegaDollyMore3 {
+		category = Item,
+		loop = false,
+		is3D = true,
+		clip {
+			file = media/sound/MegaDollyMore3.ogg,
+			distanceMax = 3,
+			volume = 1.0,
+		}
+	}
+
+    sound MegaDollyMore4 {
+		category = Item,
+		loop = false,
+		is3D = true,
+		clip {
+			file = media/sound/MegaDollyMore4.ogg,
+			distanceMax = 3,
+			volume = 1.0,
+		}
+	}
+
+    sound MegaDollyMore5 {
+		category = Item,
+		loop = false,
+		is3D = true,
+		clip {
+			file = media/sound/MegaDollyMore5.ogg,
+			distanceMax = 3,
+			volume = 1.0,
+		}
+	}
+
+    item FakeDolly {
+        DisplayCategory = Junk,
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName = FakeDolly,
+        Icon = Doll,
+        WorldStaticModel = Doll,
+        Tooltip = Tooltip_StopCheatingJenny,
+    }
+
+    item TinyDolly {
+        DisplayCategory = Junk,
+        Type = Normal,
+        DisplayName = TinyDolly,
+        Icon = Doll,
+        Weight = 1.0,
+        WorldStaticModel = TinyDolly,
+        StaticModel = TinyDollyStatic,
+        AttachmentType = Doll,
+        Tooltip = Tooltip_TinyDolly,
+    }
+
+    item BigDolly {
+        DisplayCategory = Junk,
+        Type = Normal,
+        DisplayName = BigDolly,
+        Icon = Doll,
+        Weight = 1.0,
+        WorldStaticModel = BigDolly,
+        StaticModel = BigDolly,
+        AttachmentType = Doll,
+        tooltip = Tooltip_BigDolly,
+    }
+
+    item MegaDolly {
+        DisplayCategory = Junk,
+        Type = Normal,
+        DisplayName = MegaDolly,
+        Icon = MechaDolly,Cr
+        Weight = 2.0,
+        WorldStaticModel = MegaDolly,
+        Tooltip = Tooltip_MegaDolly,
+    }
+
+    recipe CreateBigDolly {
+        Doll=5,
+        Thread=2,
+        keep Needle/SutureNeedle,
+        Result: BigDolly,
+        Time: 120.0,
+        SkillRequired: Tailoring=1,
+        CanBeDoneFromFloor: True,
+        NeedToBeLearn: False,
+        AnimNode:Disassemble,
+        Prop1: Doll,
+    }
+
+    recipe CreateMegaDolly {
+        BigDolly=5,
+        BlowTorch=1,
+        WeldingRods=1,
+        ElectronicsScrap=1,
+        Amplifier=1,
+        CorpseMale/CorpseFemale,
+        Result: Base.FakeDolly,
+        RemoveResultItem:true,
+        OnCreate: CheeseMemes.Recipes.MegaDolly,
+        Time: 666.0,
+        SkillRequired: Metalworking=1,
+        CanBeDoneFromFloor: True,
+        NeedToBeLearn: False,
+        AnimNode: BlowTorchFloor,
+        Prop1: BlowTorch,
+        Sound: BlowTorch,
+    }
+}

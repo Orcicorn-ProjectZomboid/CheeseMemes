@@ -1,0 +1,33 @@
+Moveables_EN = {
+    CheeseMeme_DontBeBlue = "Spiffo says Don't Be Blue!",
+    CheeseMeme_Prepared = "Spiffo says Be Prepared",
+    CheeseMeme_Spifflins = "Spifflins",
+    CheeseMeme_Spiffmas  = "Merry Spiffmas",
+    CheeseMeme_Warm = "Spiffo says Stay Warm",
+    CheeseMeme_TheyreComing = "Spiffo says They're Coming",
+    CheeseMeme_SpiffoWick = "Spiffo Wick",
+
+    CheeseMeme_DM = "Bill Murray: Who you gonna DM?",
+    CheeseMeme_SafeKY = "Bill Murray: A Safe Kentucky",
+    CheeseMeme_CleanKY = "Bill Murray: 100k and Counting",
+    CheeseMeme_Zombiebuster = "Bill Murray: Zombie Busters",
+
+    CheeseMeme_CheeseHard = "Cheese Hard",
+    CheeseMeme_Chemlins = "Chemlins",
+    CheeseMeme_DawnOfTheCheese = "Dawn of the Cheese",
+    CheeseMeme_JurassicPark = "Churassic Park",
+    CheeseMeme_Patties = "Patties",
+    CheeseMeme_SilenceOfTheCheese = "Silence of the Cheese",
+    CheeseMeme_TheCurdfather = "The Curdfather",
+    CheeseMeme_Zombieland2 = "Cheesieland",
+
+    CheeseMeme_Back2Future = "Back to the Future Poster",
+    CheeseMeme_Gremlins = "Gremlins Poster",
+    CheeseMeme_HP = "Harry Potter Poster",
+
+    CheeseMeme_CryHard = "Cry Hard Poster",
+    CheeseMeme_GhostToddler = "Ghost Todder Poster",
+
+    CheeseMeme_RosewoodHigh = "Fast Times at Rosewood High Poster",
+    CheeseMeme_BrainfastClub = "The Brainfast Club Poster",
+}

@@ -1,0 +1,99 @@
+module Base {
+	model Crowbarski {
+		mesh = Weapons/1Handed/Crowbar,
+        texture = weapons/Crowbarski,
+		attachment world {
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 90.0000 0.0000,
+		}
+	}
+
+    model CrowbarskiCertificate {
+		mesh = WorldItems/Magazine,
+		texture = WorldItems/CrowbarskiCertificate,
+		scale = 0.4,
+	}
+
+    item Crowbarski {
+        DisplayCategory = ToolWeapon,
+        MaxRange = 1.25,
+        WeaponSprite = Crowbarski,
+        MinAngle = 0.75,
+        Type = Weapon,
+        MinimumSwingTime = 3,
+        KnockBackOnNoDeath = TRUE,
+        SwingAmountBeforeImpact = 0.02,
+        Categories = Blunt,
+        Weight = 2,
+        ConditionLowerChanceOneIn = 1,
+        PushBackMod = 0.5,
+        SubCategory = Swinging,
+        ConditionMax = 1,
+        MaxHitCount = 3,
+        DoorDamage = 0,
+        SwingAnim = Bat,
+        CriticalChance = 35,
+        CritDmgMultiplier = 6,
+        DisplayName = crowbarski,
+        MinRange = 0.61,
+        SwingTime = 3,
+        HitAngleMod = -30,
+        KnockdownMod = 0,
+        Icon = Crowbarski,
+        RunAnim = Run_Weapon2,
+        BreakSound = BreakGlassItem,
+        DoorHitSound = CrowbarHit,
+        HitSound = CrowbarHit,
+        HitFloorSound = CrowbarHit,
+        SwingSound = CrowbarSwing,
+        TreeDamage = 0,
+        MetalValue = 0,
+        CriticalChance = 25,
+        CritDmgMultiplier = 2.5,
+        MinDamage = 0.7,
+        MaxDamage = 1.15,
+        BaseSpeed = 1,
+        TwoHandWeapon = TRUE,
+        WeaponLength = 0.4,
+        AttachmentType = BigBlade,
+        Tags = Crowbar;RemoveBarricade,
+		Tooltip = Tooltip_Crowbarski,
+    }
+
+    item CrowbarskiNecklace {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = crowbarskinecklace,
+        ClothingItem = necklace_crowbarskicrystal,
+        Icon = CrowbarskiNecklace,
+        BodyLocation = Necklace,
+        Weight = 0.1,
+        Cosmetic = TRUE,
+        WorldStaticModel = Necklace_SilverCrucifix_Ground,
+        CanHaveHoles = false,
+        Tooltip = Tooltip_CrowbarskiNecklace,
+        CombatSpeedModifier = 1.10,
+    }
+
+    item CrowbarskiCertificate {
+        DisplayCategory = Accessory,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	CrowbarskiCertificateAuthenticity,
+        Icon	=	CrowbarskiCertificate,
+        CanBeWrite  =   true,
+        PageToWrite =   1,
+        WorldStaticModel = CrowbarskiCertificate,
+    }
+
+    recipe CreateCrowbarskiCertificate {
+        keep Base.Crowbarski,
+        keep [Recipe.GetItemTypes.Write],
+        Base.SheetPaper2,
+        Result: Base.CrowbarskiCertificate,
+        Time: 90.0,
+        NeedToBeLearn:false,
+        NoBrokenItems:false,
+        OnCreate: CheeseMemes.Recipes.Crowbarski,
+    }
+}

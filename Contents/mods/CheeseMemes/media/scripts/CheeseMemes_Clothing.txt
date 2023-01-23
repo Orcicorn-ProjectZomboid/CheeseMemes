@@ -1,0 +1,48 @@
+module Base {	
+    item GlassesCheeseGamer {
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = GlassesCheeseGamer,
+		ClothingItem = glasses_cheesegamer,
+		BodyLocation = Eyes,
+		ScratchDefense = 2,
+		CombatSpeedModifier = 1.01,
+		Icon = GlassesCheeseGamer,
+		Weight = 0.1,
+		Cosmetic = TRUE,
+		ChanceToFall = 0,
+		Tooltip = Tooltip_GlassesCheeseGamer,
+	}
+
+	item TShirtRoyaleWithCheese {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = TShirtRoyaleWithCheese,
+        ClothingItem = tshirt_royalewithcheese,
+		Icon = TShirtRoyaleWithCheese,
+        BodyLocation = Tshirt,
+        BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.05,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+        CanHaveHoles = true,
+        Tooltip = Tooltip_TShirtRoyaleWithCheese,
+	}
+
+	item TShirtJennyShakes {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = TShirtJennyShakes,
+        ClothingItem = tshirt_jennyshakes,
+		Icon = TShirtJennyShakes,
+        BodyLocation = Tshirt,
+        BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.05,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+        CanHaveHoles = true,
+        Tooltip = Tooltip_TShirtJennyShakes,
+	}
+}

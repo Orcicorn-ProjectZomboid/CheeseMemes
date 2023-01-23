@@ -1,0 +1,227 @@
+module Base {
+	sound PCDialUpModem {
+		category = Item,
+		loop = true,
+		is3D = true,
+		clip {
+			file = media/sound/PCDialUp.ogg,
+			distanceMax = 2,
+			volume = 0.7,
+		}
+	}
+
+    model DiscCheese {
+		mesh = WorldItems/Disk,
+		texture = WorldItems/DiscCheese1,
+		scale = 0.5,
+	}
+
+	model CheeseMagazineGround1 {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/CheeseMagazine1,
+        scale = 0.4,
+    }
+
+    model CheeseMagazineGround2 {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/CheeseMagazine2,
+        scale = 0.4,
+    }
+
+    model CheeseMagazineGround3 {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/CheeseMagazine3,
+        scale = 0.4,
+    }
+
+    model CheeseMagazineGround4 {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/CheeseMagazine4,
+        scale = 0.4,
+    }
+
+    item CheesePosterCheese01 {
+        Type = Moveable,
+        Icon = PosterCheese,
+        DisplayCategory = Poster,
+        Weight = 2.0,
+        DisplayName = CheesePosterCheese01,
+        WorldObjectSprite = cheesememes_posters_01_45,
+    }
+
+    item CheesePosterCheese02 {
+        Type = Moveable,
+        Icon = PosterCheese,
+        DisplayCategory = Poster,
+        Weight = 2.0,
+        DisplayName = CheesePosterCheese02,
+        WorldObjectSprite = cheesememes_posters_01_37,
+    }
+
+    item CheesePosterCheese03 {
+        Type = Moveable,
+        Icon = PosterCheese,
+        DisplayCategory = Poster,
+        Weight = 2.0,
+        DisplayName = CheesePosterCheese03,
+        WorldObjectSprite = cheesememes_posters_01_29,
+    }
+
+    item CheesePosterCheese04 {
+        Type = Moveable,
+        Icon = PosterCheese,
+        DisplayCategory = Poster,
+        Weight = 2.0,
+        DisplayName = CheesePosterCheese04,
+        WorldObjectSprite = cheesememes_posters_01_28,
+    }
+
+    item CheesePosterCheese05 {
+        Type = Moveable,
+        Icon = PosterCheese,
+        DisplayCategory = Poster,
+        Weight = 2.0,
+        DisplayName = CheesePosterCheese05,
+        WorldObjectSprite = cheesememes_posters_01_7,
+    }
+
+    item CheesePosterCheese06 {
+        Type = Moveable,
+        Icon = PosterCheese,
+        DisplayCategory = Poster,
+        Weight = 2.0,
+        DisplayName = CheesePosterCheese06,
+        WorldObjectSprite = cheesememes_posters_01_12,
+    }
+
+    item CheesePosterCheese07 {
+        Type = Moveable,
+        Icon = PosterCheese,
+        DisplayCategory = Poster,
+        Weight = 2.0,
+        DisplayName = CheesePosterCheese07,
+        WorldObjectSprite = cheesememes_posters_01_54,
+    }
+
+    item CheesePosterCheese08 {
+        Type = Moveable,
+        Icon = PosterCheese,
+        DisplayCategory = Poster,
+        Weight = 2.0,
+        DisplayName = CheesePosterCheese08,
+        WorldObjectSprite = cheesememes_posters_01_15,
+    }
+
+    item DiscCheese1 {
+        DisplayCategory = Entertainment,
+        Type = Normal,
+        DisplayName = DiscCheese1,
+        Icon = DiscCheese,
+        Weight = 0.1,
+        WorldStaticModel = DiscCheese,
+        Tooltip = Tooltip_DiscCheese,
+    }
+
+    item MagazineCheese1 {
+        DisplayCategory = Literature,
+        Weight = 0.2,
+        Type = Normal,
+        DisplayName = MagazineCheese1,
+        StressChange = -15,
+        Icon = CheeseMagazine1,
+        BoredomChange = -20,
+        StaticModel = CheeseMagazineGround1,
+        WorldStaticModel = CheeseMagazineGround1,
+        Tooltip = Tooltip_CheeseMagazine1,
+    }
+
+    item MagazineCheese2 {
+        DisplayCategory = Literature,
+        Weight = 0.2,
+        Type = Normal,
+        DisplayName = MagazineCheese2,
+        StressChange = -15,
+        Icon = CheeseMagazine2,
+        BoredomChange = -20,
+        StaticModel = CheeseMagazineGround2,
+        WorldStaticModel = CheeseMagazineGround2,
+        Tooltip = Tooltip_CheeseMagazine2,
+    }
+
+    item MagazineCheese3 {
+        DisplayCategory = Literature,
+        Weight = 0.2,
+        Type = Normal,
+        DisplayName = MagazineCheese3,
+        StressChange = -15,
+        Icon = CheeseMagazine3,
+        BoredomChange = -20,
+        StaticModel = CheeseMagazineGround3,
+        WorldStaticModel = CheeseMagazineGround3,
+        Tooltip = Tooltip_CheeseMagazine3,
+    }
+
+    item MagazineCheese4 {
+        DisplayCategory = Literature,
+        Weight = 0.2,
+        Type = Normal,
+        DisplayName = MagazineCheese4,
+        StressChange = -15,
+        Icon = CheeseMagazine4,
+        BoredomChange = -20,
+        StaticModel = CheeseMagazineGround4,
+        WorldStaticModel = CheeseMagazineGround4,
+        Tooltip = Tooltip_CheeseMagazine4,
+    }
+    
+    recipe ConsumeMagazineCheese1 {
+        Base.MagazineCheese1,
+        Result: Base.PileOfPosters,
+        RemoveResultItem:true,
+        Time: 90.0,
+        NeedToBeLearn: False,
+        Sound: OpenSeedPacket,
+        OnCreate: CheeseMemes.Recipes.PostersCheese1,
+    }
+
+    recipe ConsumeMagazineCheese2 {
+        Base.MagazineCheese2,
+        Result: Base.PileOfPosters,
+        RemoveResultItem:true,
+        Time: 90.0,
+        NeedToBeLearn: False,
+        Sound: OpenSeedPacket,
+        OnCreate: CheeseMemes.Recipes.PostersCheese2,
+    }
+
+    recipe ConsumeMagazineCheese3 {
+        Base.MagazineCheese3,
+        Result: Base.PileOfPosters,
+        RemoveResultItem:true,
+        Time: 90.0,
+        NeedToBeLearn: False,
+        Sound: OpenSeedPacket,
+        OnCreate: CheeseMemes.Recipes.PostersCheese3,
+    }
+
+    recipe ConsumeMagazineCheese4 {
+        Base.MagazineCheese4,
+        Result: Base.PileOfPosters,
+        RemoveResultItem:true,
+        Time: 90.0,
+        NeedToBeLearn: False,
+        Sound: OpenSeedPacket,
+        OnCreate: CheeseMemes.Recipes.PostersCheese4,
+    }
+
+    recipe ConsumeDiscCheese1 {
+        keep Base.DiscCheese1,
+        Result: Base.PileOfPosters,
+        RemoveResultItem:true,
+        Time: 520.0,
+        NeedToBeLearn: False,
+        OnTest: CheeseMemes.Recipes.OnTestNearComputer,
+        OnCreate: CheeseMemes.Recipes.PostersCheeseDVD1,
+        Sound: PCDialUpModem,
+    }
+}

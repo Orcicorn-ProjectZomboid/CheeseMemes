@@ -1,0 +1,25 @@
+module Base {
+    model RemmyRat_Ground {
+        mesh = WorldItems/PlushieBadger,
+        texture = WorldItems/RemmyRat,
+        scale = 0.4,
+    }
+
+    model RemmyRat_Static {
+        mesh = WorldItems/RemmyRatStatic,
+        texture = WorldItems/RemmyRat,		
+        scale = 0.4,
+    }
+
+    item RemmyRat {
+		DisplayCategory = Rat,
+		Weight = 0.2,
+		Type = Normal,
+		DisplayName = RemmyRat,
+        Icon = RemmyRat,
+        WorldStaticModel = RemmyRat_Ground,
+        StaticModel = RemmyRat_Static,	
+        AttachmentType = SpiffoPlushie,
+        Tooltip = Tooltip_RemmyRat,
+	}
+}

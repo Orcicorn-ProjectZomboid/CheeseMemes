@@ -1,0 +1,70 @@
+module Base {
+	model BillMurrayMagazineGround {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/BillMurrayMagazine,
+        scale = 0.4,
+    }
+
+    item CheesePosterBill01 {
+        Type = Moveable,
+        Icon = PosterBillMurray,
+        DisplayCategory = Poster,
+        Weight = 2.0,
+        DisplayName = CheesePosterBill01,
+        WorldObjectSprite = cheesememes_posters_01_55,
+        Tooltip = Tooltip_PosterBillMurray,
+    }
+    
+    item CheesePosterBill02 {
+        Type = Moveable,
+        Icon = PosterBillMurray,
+        DisplayCategory = Poster,
+        Weight = 2.0,
+        DisplayName = CheesePosterBill02,
+        WorldObjectSprite = cheesememes_posters_01_36,
+        Tooltip = Tooltip_PosterBillMurray,
+    }
+
+    item CheesePosterBill03 {
+        Type = Moveable,
+        Icon = PosterBillMurray,
+        DisplayCategory = Poster,
+        Weight = 2.0,
+        DisplayName = CheesePosterBill03,
+        WorldObjectSprite = cheesememes_posters_01_21,
+        Tooltip = Tooltip_PosterBillMurray,
+    }
+
+    item CheesePosterBill04 {
+        Type = Moveable,
+        Icon = PosterBillMurray,
+        DisplayCategory = Poster,
+        Weight = 2.0,
+        DisplayName = CheesePosterBill04,
+        WorldObjectSprite = cheesememes_posters_01_13,
+        Tooltip = Tooltip_PosterBillMurray,
+    }
+
+    item MagazineOfBillMurray {
+        DisplayCategory = Literature,
+        Weight = 0.2,
+        Type = Normal,
+        DisplayName = MagazineOfBillMurray,
+        StressChange = -15,
+        Icon = BillMurrayMagazine,
+        BoredomChange = -20,
+        StaticModel = BillMurrayMagazineGround,
+        WorldStaticModel = BillMurrayMagazineGround,
+        Tooltip = Tooltip_PosterBillMurrayMagazine,
+    }
+
+    recipe ConsumeMagazineOfBillMurray {
+        Base.MagazineOfBillMurray,
+        Result: Base.PileOfPosters,
+        RemoveResultItem:true,
+        Time: 90.0,
+        NeedToBeLearn: False,
+        Sound: OpenSeedPacket,
+        OnCreate: CheeseMemes.Recipes.PostersBillMurray,
+    }
+}

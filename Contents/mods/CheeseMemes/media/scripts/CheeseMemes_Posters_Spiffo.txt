@@ -1,0 +1,115 @@
+module Base {
+    item CheesePosterSpiffo01 {
+        Type = Moveable,
+        DisplayCategory = Poster,
+        Icon = PosterSpiffo,
+        Weight = 2.0,
+        DisplayName = CheesePosterSpiffo01,
+        WorldObjectSprite = cheesememes_posters_01_5,
+        Tooltip = Tooltip_PosterSpiffo,
+    }
+    
+    item CheesePosterSpiffo02 {
+        Type = Moveable,
+        DisplayCategory = Poster,
+        Icon = PosterSpiffo,
+        Weight = 1.0,
+        DisplayName = CheesePosterSpiffo02,
+        WorldObjectSprite = cheesememes_posters_01_30,
+        Tooltip = Tooltip_PosterSpiffo,
+    }
+
+    item CheesePosterSpiffo03 {
+        Type = Moveable,
+        DisplayCategory = Poster,
+        Icon = PosterSpiffo,
+        Weight = 1.0,
+        DisplayName = CheesePosterSpiffo03,
+        WorldObjectSprite = cheesememes_posters_01_38,
+        Tooltip = Tooltip_PosterSpiffo",
+    }
+
+    item CheesePosterSpiffo04 {
+        Type = Moveable,
+        DisplayCategory = Poster,
+        Icon = PosterSpiffo,
+        Weight = 1.0,
+        DisplayName = CheesePosterSpiffo04,
+        WorldObjectSprite = cheesememes_posters_01_39,
+        Tooltip = Tooltip_PosterSpiffo,
+    }
+
+    item CheesePosterSpiffo05 {
+        Type = Moveable,
+        DisplayCategory = Poster,
+        Icon = PosterSpiffo,
+        Weight = 1.0,
+        DisplayName = CheesePosterSpiffo05,
+        WorldObjectSprite = cheesememes_posters_01_44,
+        Tooltip = Tooltip_PosterSpiffo,
+    }
+
+    item CheesePosterSpiffo06 {
+        Type = Moveable,
+        DisplayCategory = Poster,
+        Icon = PosterSpiffo,
+        Weight = 1.0,
+        DisplayName = CheesePosterSpiffo06,
+        WorldObjectSprite = cheesememes_posters_01_46,
+        Tooltip = Tooltip_PosterSpiffo,
+    }
+
+    item CheesePosterSpiffo07 {
+        Type = Moveable,
+        DisplayCategory = Poster,
+        Icon = PosterSpiffo,
+        Weight = 1.0,
+        DisplayName = CheesePosterSpiffo07,
+        WorldObjectSprite = cheesememes_posters_01_47,
+        Tooltip = Tooltip_PosterSpiffo,
+    }
+
+    item BoxOfSpiffoPromotional01 {
+        DisplayCategory = Item,
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	BoxOfSpiffoPromotional01,
+        Icon	=	BoxOfPosters,
+        StaticModel = BoxOfCheesePosters,
+        WorldStaticModel = BoxOfCheesePosters,
+    }
+
+    item BoxOfSpiffoPromotional02 {
+        DisplayCategory = Item,
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	BoxOfSpiffoPromotional02,
+        Icon	=	BoxOfPosters,
+        StaticModel = BoxOfCheesePosters,
+        WorldStaticModel = BoxOfCheesePosters,
+    }
+
+    recipe ConsumeBoxOfSpiffoPromotional01 {
+        Base.BoxOfSpiffoPromotional01, 
+        Result: Base.PileOfPosters,
+        Time: 90.0,
+        RemoveResultItem:true,
+        NeedToBeLearn: False,
+        Sound: ClothesRipping,
+        AnimNode: SawLog,
+        OnCreate: CheeseMemes.Recipes.PostersSpiffo1,
+        Prop2: BoxOfCheesePostersAnimation,
+    }
+
+    recipe ConsumeBoxOfSpiffoPromotional02 {
+        Base.BoxOfSpiffoPromotional02, 
+        Result: Base.PileOfPosters,
+        Time: 90.0,
+        RemoveResultItem:true,
+        NeedToBeLearn: False,
+        Sound: ClothesRipping,
+        AnimNode: SawLog,
+        OnCreate: CheeseMemes.Recipes.PostersSpiffo2,
+        Prop2: BoxOfCheesePostersAnimation,
+    }
+}
