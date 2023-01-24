@@ -47,17 +47,25 @@ CheeseMemes.Weapons.KneeCapABitch = function(target)
 end
 
 CheeseMemes.Weapons.MeltSomeFaces = function(target, player)
-    if ZombRand(200) == 69 then
-        if instanceof(target, "IsoZombie") then 
-            -- There's no player setStaggerBack
+    -- If Target is a zombie, small chance
+    if instanceof(target, "IsoZombie") then 
+        if ZombRand(200) == 69 then
             target:setStaggerBack(true);
+            if not target:isOnFire() then 
+                target:SetOnFire();
+                CheeseMemes.Functions.EmitSound(player, "AxelRoseProc1");
+            else
+                CheeseMemes.Functions.EmitSound(player, "AxelRoseProc2");
+            end
         end
-        if not target:isOnFire() then 
-            target:SetOnFire();
-            CheeseMemes.Functions.EmitSound(player, "AxelRoseProc1");
-        else
-            CheeseMemes.Functions.EmitSound(player, "AxelRoseProc2");
-        end
+    elseif instanceof(target, "IsoPlayer") then 
+        if ZombRand(100) < 25 then 
+            if not target:isOnFire() then 
+                target:SetOnFire();
+                CheeseMemes.Functions.Say(getText("IGUI_AxelRosePVP1", target:getDisplayName()))
+                CheeseMemes.Functions.Say(getText("IGUI_AxelRosePVP2"));
+            end 
+        end 
     end
 end
 
