@@ -2,7 +2,7 @@ require "CheeseMemes_00Shared.lua";
 
 CheeseMemes.Weapons.Moan = function(target)
     -- % chance you trigger a sound effect
-    if ZombRand(100) <= 10 then return; end;
+    if ZombRand(100) <= 5 then return; end;
     
     if instanceof(target, "IsoZombie") then
         local sound = "SamuelMoan";
