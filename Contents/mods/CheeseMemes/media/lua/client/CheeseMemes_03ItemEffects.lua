@@ -109,10 +109,11 @@ end
 -- Gamer Glasses causes you to say stupid shit randomly
 CheeseMemes.Items.GamerGlasses = function(player)
     local maxQuotes = 10;                -- IGUI_CheeseQuotesXXX
-    if ZombRand(1, 100) <= 1 then 
+    if ZombRand(1, 100) <= 2 then 
         local quote = ZombRand(0, (maxQuotes + 1))
         if quote < 1 then quotes = 1; end
         if quote > maxQuotes then quote = maxQuotes; end            
-        player:Say(getText("IGUI_CheeseQuotes" .. quote))
+        -- player:Say(getText("IGUI_CheeseQuotes" .. quote))
+        processSayMessage(getText("IGUI_CheeseQuotes" .. quote))
     end
 end
