@@ -12,12 +12,12 @@ Recipe_EN = {
     Recipe_ConsumeBoxOfSpiffoPromotional02 = "Unpack promotional posters",
     Recipe_ConsumeMagazineOfBillMurray = "Remove poster",
     Recipe_ConsumeCharliePosterBook = "Open and browse",
-    Recipe_ConsumeCheeseMagazine1 = "Read magazine",
-    Recipe_ConsumeCheeseMagazine2 = "Read magazine",
-    Recipe_ConsumeCheeseMagazine3 = "Read magazine",
-    Recipe_ConsumeCheeseMagazine4 = "Read magazine",
+    Recipe_ConsumeMagazineCheese1 = "Read magazine",
+    Recipe_ConsumeMagazineCheese2 = "Read magazine",
+    Recipe_ConsumeMagazineCheese3 = "Read magazine",
+    Recipe_ConsumeMagazineCheese4 = "Read magazine",
     Recipe_ConsumeDiscCheese1 = "Extract posters (requires computer)",
 
-    Recipe_CreateBigDolly = "Combine into Mega Dolly",
+    Recipe_CreateBigDolly = "Combine into Big Dolly",
     Recipe_CreateMegaDolly = "Summon she who shall not be named",
 }
