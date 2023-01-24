@@ -1,26 +1,27 @@
 require "CheeseMemes_00Shared.lua";
 
 CheeseMemes.Weapons.Moan = function(target)
-    -- % chance you trigger a sound effect
-    if ZombRand(100) <= 5 then return; end;
+    -- Must be a zombie and must pass a % random check
+    if not instanceof(target, "IsoZombie") then return; end;
+    if ZombRand(100) > 5 then return; end;
     
-    if instanceof(target, "IsoZombie") then
-        local sound = "SamuelMoan";
-        if target:isFemale() then 
-            sound = sound .. "Female";
-        else
-            sound = sound .. "Male";
-        end
-
-        -- Pick a random sound effect (Excess due to floor/ceil issues with ZombRand)a
-        local random = ZombRand(1, 9);
-        if random <= 3 then sound = sound .. 1; end
-        if random > 3 and random <= 6 then sound = sound .. 2; end
-        if random > 6 then sound = sound .. 3; end
-
-        -- Play the sound
-        CheeseMemes.Functions.EmitSound(target, sound)
+    -- Determine the Male/Female sound effect file name
+    local sound = "SamuelMoan";
+    if target:isFemale() then 
+        sound = sound .. "Female";
+    else
+        sound = sound .. "Male";
     end
+
+    -- Pick a random sound effect. We go 0 to Max+1 since the ceil/floor functions
+    -- in ZombRand cause the start/stop integers to only get 1/2 a chance compared to others
+    local maxSounds = 3
+    local random = ZombRand(0, maxSounds + 1);
+    if random < 1 then random = 1; end;
+    if random > maxSounds then random = maxSounds; end;
+
+    -- Play the sound
+    CheeseMemes.Functions.EmitSound(target, sound)
 end
 
 CheeseMemes.Weapons.KneeCapABitch = function(target)
