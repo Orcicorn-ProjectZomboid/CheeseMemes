@@ -31,6 +31,8 @@ table.insert(ProceduralDistributions["list"]["GigamartSchool"].items, "Base.BoxO
 table.insert(ProceduralDistributions["list"]["GigamartSchool"].items, 2);
 table.insert(ProceduralDistributions["list"]["SpiffosKitchenCounter"].items, "Base.BoxOfSpiffoPromotional01");
 table.insert(ProceduralDistributions["list"]["SpiffosKitchenCounter"].items, 10);
+table.insert(ProceduralDistributions["list"]["PawnShopCases"].items, "Base.BoxOfSpiffoPromotional01");
+table.insert(ProceduralDistributions["list"]["PawnShopCases"].items, 3);
 --  Promotional Poster Group #2: Gun Store / Prepper
 table.insert(ProceduralDistributions["list"]["GigamartTools"].items, "Base.BoxOfSpiffoPromotional02");
 table.insert(ProceduralDistributions["list"]["GigamartTools"].items, 0.01);
@@ -40,6 +42,8 @@ table.insert(ProceduralDistributions["list"]["GunStoreMagazineRack"].items, "Bas
 table.insert(ProceduralDistributions["list"]["GunStoreMagazineRack"].items, 8);
 table.insert(ProceduralDistributions["list"]["GunStoreShelf"].items, "Base.BoxOfSpiffoPromotional02");
 table.insert(ProceduralDistributions["list"]["GunStoreShelf"].items, 0.01);
+table.insert(ProceduralDistributions["list"]["PawnShopCases"].items, "Base.BoxOfSpiffoPromotional02");
+table.insert(ProceduralDistributions["list"]["PawnShopCases"].items, 3);
 -- Spiffo Gremlins (HitVids & Crate)
 table.insert(ProceduralDistributions["list"]["MovieRentalShelves"].items, "Base.CheesePosterSpiffo03");
 table.insert(ProceduralDistributions["list"]["MovieRentalShelves"].items, 0.1);
@@ -57,6 +61,8 @@ table.insert(ProceduralDistributions["list"]["CrateVHSTapes"].items, 0.1);
 -- Group 1: HitVids may have box of promotional posters
 table.insert(ProceduralDistributions["list"]["MovieRentalShelves"].items, "Base.BoxOfMoviePromotional01");
 table.insert(ProceduralDistributions["list"]["MovieRentalShelves"].items, 1);
+table.insert(ProceduralDistributions["list"]["PawnShopCases"].items, "Base.BoxOfMoviePromotional01");
+table.insert(ProceduralDistributions["list"]["PawnShopCases"].items, 3);
 -- Group 2: Individual posters may be in VHS Crates
 table.insert(ProceduralDistributions["list"]["CrateVHSTapes"].items, "Base.CheesePosterMovie01");
 table.insert(ProceduralDistributions["list"]["CrateVHSTapes"].items, 3);
