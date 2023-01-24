@@ -30,6 +30,16 @@ CheeseMemes.Functions.FormatCommas = function(number)
 	return left..(num:reverse():gsub('(%d%d%d)','%1,'):reverse())..right
 end
 
+CheeseMemes.Functions.Say = function(message)
+    -- player:Say(message)
+    processSayMessage(message)
+end
+
+CheeseMemes.Functions.Shout = function(message)
+    -- player:SayShout(message)
+    processShoutMessage(message)
+end
+
 CheeseMemes.Functions.HaloText = function(player, message)
     HaloTextHelper:update();
     HaloTextHelper.addText(player, message, HaloTextHelper.getColorWhite())

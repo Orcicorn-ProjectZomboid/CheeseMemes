@@ -144,7 +144,7 @@ end
 CheeseMemes.Recipes.MegaDolly = function(items, result, player)
     CheeseMemes.Functions.EmitSound(player, "CreateMegaDolly1");
     CheeseMemes.Functions.EmitSound(player, "CreateMegaDolly2");
-    player:Say(getText("IGUI_MegaDolly"));
+    CheeseMemes.Functions.Say(getText("IGUI_MegaDolly"))
     local sq = getSquare(player:getX(), player:getY(), player:getZ());
     sq:AddWorldInventoryItem("Base.MegaDolly", 0, 0, 0);
 end

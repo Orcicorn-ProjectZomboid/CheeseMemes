@@ -74,7 +74,7 @@ CheeseMemes.Items.MegaDolly = function(item)
         local allItems = ScriptManager.instance:getAllItems();
         local randomItem = allItems:get(ZombRand(allItems:size()-1)):getFullName();
         playerInv:AddItem(randomItem);
-        player:SayShout(getText("IGUI_MegaDollyLoot"));
+        CheeseMemes.Functions.Shout(getText("IGUI_MegaDollyLoot"));
     end
 end
 
@@ -93,7 +93,7 @@ CheeseMemes.Items.SniffDavid = function(player, square)
 
     -- Handle how the character reacts
     if ZombRand(100) < 10 then 
-        player:SayShout(getText("IGUI_SniffDavidShout"))
+        CheeseMemes.Functions.Shout(getText("IGUI_SniffDavidShout"))
         if player:getStats():getDrunkenness() < 12 then 
             player:getStats():setDrunkenness(12);
         end
@@ -113,7 +113,6 @@ CheeseMemes.Items.GamerGlasses = function(player)
         local quote = ZombRand(0, (maxQuotes + 1))
         if quote < 1 then quotes = 1; end
         if quote > maxQuotes then quote = maxQuotes; end            
-        -- player:Say(getText("IGUI_CheeseQuotes" .. quote))
-        processSayMessage(getText("IGUI_CheeseQuotes" .. quote))
+        CheeseMemes.Functions.Say(getText("IGUI_CheeseQuotes" .. quote));
     end
 end
