@@ -26,6 +26,7 @@ end
 
 CheeseMemes.Weapons.KneeCapABitch = function(target)
     if instanceof(target, "IsoZombie") then
+        -- if the zombie can walk, stagger then break their legs
         if target:isCanWalk() then
             target:setCanWalk(false);
             target:setBecomeCrawler(true);
@@ -34,9 +35,14 @@ CheeseMemes.Weapons.KneeCapABitch = function(target)
                 CheeseMemes.Functions.EmitSound(target, "KatanyaHardingHit");
             end
         end
-    else
-        target:setKnockedDown(true)
-        -- Break leg somehow?
+    elseif instanceof(target, "IsoPlayer") then
+        -- if the player can walk, knock them down, break right leg
+        local bodyDamage = target:getBodyDamage();
+        if bodyDamage:getBodyPart(BodyPartType.LowerLeg_R):getFractureTime() <= 0 then    
+            bodyDamage:getBodyPart(BodyPartType.LowerLeg_R):setFractureTime(20);
+            bodyDamage:getBodyPart(BodyPartType.UpperLeg_R):setStiffness(20);
+            bodyDamage:getBodyPart(BodyPartType.Foot_R):setStiffness(20);
+        end
     end
 end
 
