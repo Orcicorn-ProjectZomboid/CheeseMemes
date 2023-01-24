@@ -22,7 +22,7 @@ module Base {
         category = Item,
         clip {
             file = media/sound/SamuelSwing.ogg,
-            volume = 2.0,
+            volume = 0.85,
         }
     }
 
@@ -30,7 +30,7 @@ module Base {
         category = Item,
         clip {
             file = media/sound/SamuelHit.ogg,
-            volume = 2.0,
+            volume = 0.5,
         }
     }
 
@@ -51,7 +51,7 @@ module Base {
         is3D = true, 
         clip {
             file = media/sound/SamuelMoanFemale2.ogg,
-            distanceMax = 2,
+            distanceMax = 1,
             volume = 1.25,
         }
     }
@@ -62,7 +62,7 @@ module Base {
         is3D = true, 
         clip {
             file = media/sound/SamuelMoanFemale3.ogg,
-            distanceMax = 2,
+            distanceMax = 1,
             volume = 1.25,
         }
     }
@@ -73,7 +73,7 @@ module Base {
         is3D = true, 
         clip {
             file = media/sound/SamuelMoanMale1.ogg,
-            distanceMax = 2,
+            distanceMax = 1,
             volume = 1.0,
         }
     }
@@ -84,7 +84,7 @@ module Base {
         is3D = true, 
         clip {
             file = media/sound/SamuelMoanMale2.ogg,
-            distanceMax = 2,
+            distanceMax = 1,
             volume = 1.0,
         }
     }
@@ -95,7 +95,7 @@ module Base {
         is3D = true, 
         clip {
             file = media/sound/SamuelMoanMale3.ogg,
-            distanceMax = 2,
+            distanceMax = 1,
             volume = 1.0,
         }
     }
