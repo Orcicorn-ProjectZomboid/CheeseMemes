@@ -52,20 +52,35 @@ Events.OnPlayerUpdate.Add(CheeseMemes.Events.OnPlayerUpdate)
 -- Context Menus
 CheeseMemes.Events.OnFillContext = function(player, context, items)
     local items = ISInventoryPane.getActualItems(items);
+    local disabled = false;
+    local disableMessage = "";
     for _, item in ipairs(items) do 
         -- MegaDolly Right-click 
         if item:getType() == "MegaDolly" then 
             local option = context:addOption(getText("IGUI_MegaDollyFeed"), item, CheeseMemes.Items.MegaDolly)
+
+            -- Disable if you don't have a bettery
             if not getPlayer():getInventory():getFirstTypeRecurse("Battery") then 
+                disabled = true;
+                disableMessage = "IGUI_MegaDollyTooltip";
+            end
+
+            -- Disable if Too Soon (Anti-Spam)
+            if item:getModData().LastDollyAction ~= nil then 
+                if (CheeseMemes.Functions.Timestamp() - item:getModData().LastDollyAction) < 120000 then 
+                    disabled = true;
+                    disableMessage = "IGUI_MegaDollySpam";
+                end
+            end
+
+            -- Disable the tooltip?
+            if disabled then 
                 local toolTip = ISWorldObjectContextMenu.addToolTip();
                 option.toolTip = toolTip;
-                toolTip.description = getText("IGUI_MegaDollyTooltip");
+                toolTip.description = getText(disableMessage);
                 option.notAvailable = true;
             end
-            return;
         end
-        -- Sniff Dave the Gnome
-
     end
 end
 Events.OnFillInventoryObjectContextMenu.Add(CheeseMemes.Events.OnFillContext)

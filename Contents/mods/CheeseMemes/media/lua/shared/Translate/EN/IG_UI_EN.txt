@@ -25,6 +25,7 @@ IGUI_EN = {
     IGUI_MegaDolly = "IT'S ALIVVVEEE!!!!!!",
     IGUI_MegaDollyFeed = "Feed",
     IGUI_MegaDollyTooltip = "MECHA DOLLY DEMANDS BATTERIES... NOW!",
+    IGUI_MegaDollySpam = "Try again in a few seconds",
     IGUI_MegaDollyLoot = "ALL HAIL MECHA-DOLLY",
 
     IGUI_AxelRosePVP1 = "Do you know where you are %1?",

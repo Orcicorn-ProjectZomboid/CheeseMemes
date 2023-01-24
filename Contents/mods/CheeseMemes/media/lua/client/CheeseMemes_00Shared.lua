@@ -91,5 +91,8 @@ CheeseMemes.Functions.NotableDates = function()
             return;     -- Only one announcement per day
         end
     end
+end
 
+CheeseMemes.Functions.Timestamp = function()
+    return getGameTime():getCalender():getTimeInMillis();
 end

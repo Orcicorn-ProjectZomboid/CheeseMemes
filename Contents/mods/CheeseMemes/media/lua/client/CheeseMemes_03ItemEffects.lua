@@ -57,6 +57,9 @@ CheeseMemes.Items.MegaDolly = function(item)
     local player = getPlayer();
     local playerInv = player:getInventory();
 
+    -- Record the last action for spam prevention
+    item:getModData().LastDollyAction = CheeseMemes.Functions.Timestamp();
+
     -- Tweak out the random since Ceil/Floor is a little fucky with ZombRand
     local randomSoundMax = 5;           -- Max sounds (Happy/More should always be same amount)
     local random = ZombRand(0, randomSoundMax + 1);
