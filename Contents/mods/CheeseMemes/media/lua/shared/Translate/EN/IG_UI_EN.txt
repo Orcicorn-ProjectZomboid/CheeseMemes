@@ -27,6 +27,9 @@ IGUI_EN = {
     IGUI_MegaDollyTooltip = "MECHA DOLLY DEMANDS BATTERIES... NOW!",
     IGUI_MegaDollyLoot = "ALL HAIL MECHA-DOLLY",
 
+    IGUI_AxelRosePVP1 = "Do you know where you are %1?",
+    IGUI_AxelRosePVP2 = "YOU'RE IN THE JUNGLE BABY",
+
     IGUI_SniffDavid = "Sniff David",
     IGUI_SniffDavidLine1 = "What am I doing with my life",
     IGUI_SniffDavidLine2 = "Oh he smells like daisies",
