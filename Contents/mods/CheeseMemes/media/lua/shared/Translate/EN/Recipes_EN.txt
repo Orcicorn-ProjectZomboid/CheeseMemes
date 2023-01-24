@@ -8,6 +8,7 @@ Recipe_EN = {
     Recipe_MakeCharliesTrophy2 = "Build a super trophy",
     Recipe_DisassembleCharliesTrophies = "Take apart",
 
+    Recipe_OpenBoxOfMoviePromotional01 = "Unpack promotional posters",
     Recipe_ConsumeBoxOfSpiffoPromotional01 = "Unpack promotional posters",
     Recipe_ConsumeBoxOfSpiffoPromotional02 = "Unpack promotional posters",
     Recipe_ConsumeMagazineOfBillMurray = "Remove poster",
