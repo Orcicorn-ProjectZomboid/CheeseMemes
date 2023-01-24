@@ -27,13 +27,19 @@ table.insert(ProceduralDistributions["list"]["WardrobeChild"].items, 0.5);
 --  Promotional Poster Group #1: Spiffo Restaurants
 table.insert(ProceduralDistributions["list"]["CrateSpiffoMerch"].items, "Base.BoxOfSpiffoPromotional01");
 table.insert(ProceduralDistributions["list"]["CrateSpiffoMerch"].items, 1);
+table.insert(ProceduralDistributions["list"]["GigamartSchool"].items, "Base.BoxOfSpiffoPromotional01");
+table.insert(ProceduralDistributions["list"]["GigamartSchool"].items, 2);
 table.insert(ProceduralDistributions["list"]["SpiffosKitchenCounter"].items, "Base.BoxOfSpiffoPromotional01");
-table.insert(ProceduralDistributions["list"]["SpiffosKitchenCounter"].items, 0.5);
+table.insert(ProceduralDistributions["list"]["SpiffosKitchenCounter"].items, 10);
 --  Promotional Poster Group #2: Gun Store / Prepper
+table.insert(ProceduralDistributions["list"]["GigamartTools"].items, "Base.BoxOfSpiffoPromotional02");
+table.insert(ProceduralDistributions["list"]["GigamartTools"].items, 0.01);
 table.insert(ProceduralDistributions["list"]["GunStoreCounter"].items, "Base.BoxOfSpiffoPromotional02");
-table.insert(ProceduralDistributions["list"]["GunStoreCounter"].items, 1);
+table.insert(ProceduralDistributions["list"]["GunStoreCounter"].items, 20);
 table.insert(ProceduralDistributions["list"]["GunStoreMagazineRack"].items, "Base.BoxOfSpiffoPromotional02");
-table.insert(ProceduralDistributions["list"]["GunStoreMagazineRack"].items, 0.5);
+table.insert(ProceduralDistributions["list"]["GunStoreMagazineRack"].items, 8);
+table.insert(ProceduralDistributions["list"]["GunStoreShelf"].items, "Base.BoxOfSpiffoPromotional02");
+table.insert(ProceduralDistributions["list"]["GunStoreShelf"].items, 0.01);
 -- Spiffo Gremlins (HitVids & Crate)
 table.insert(ProceduralDistributions["list"]["MovieRentalShelves"].items, "Base.CheesePosterSpiffo03");
 table.insert(ProceduralDistributions["list"]["MovieRentalShelves"].items, 0.1);
