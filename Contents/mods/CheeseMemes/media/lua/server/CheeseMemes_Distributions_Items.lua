@@ -3,7 +3,7 @@ require 'Items/SuburbsDistributions'
 
 -- R4K's Memoire (Only in the trash)
 table.insert(SuburbsDistributions["all"]["bin"].items, "Base.R4ksbook");
-table.insert(SuburbsDistributions["all"]["bin"].items, 0.5);
+table.insert(SuburbsDistributions["all"]["bin"].items, 1);
 
 -- Poss Cola (Where soda is found, sometimes trash or dead zombies)
 table.insert(ProceduralDistributions["list"]["BarCounterMisc"].items, "Base.PossSoda");
