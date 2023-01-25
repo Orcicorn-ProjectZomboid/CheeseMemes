@@ -2,12 +2,10 @@ Recipe_EN = {
     Recipe_ConvertToKatanyaHarding = "Blunt the blade",
     Recipe_ConvertToAxelRose = "Melt some faces",
     Recipe_CreateCrowbarskiCertificate = "Verify authenticity",
-
     Recipe_OpenCharliesLegoBox = "Open box",
     Recipe_MakeCharliesTrophy1 = "Build a trophy",
     Recipe_MakeCharliesTrophy2 = "Build a super trophy",
     Recipe_DisassembleCharliesTrophies = "Take apart",
-
     Recipe_OpenBoxOfMoviePromotional01 = "Unpack promotional posters",
     Recipe_ConsumeBoxOfSpiffoPromotional01 = "Unpack promotional posters",
     Recipe_ConsumeBoxOfSpiffoPromotional02 = "Unpack promotional posters",
@@ -18,7 +16,6 @@ Recipe_EN = {
     Recipe_ConsumeMagazineCheese3 = "Read magazine",
     Recipe_ConsumeMagazineCheese4 = "Read magazine",
     Recipe_ConsumeDiscCheese1 = "Extract posters (requires computer)",
-
     Recipe_CreateBigDolly = "Combine into Big Dolly",
     Recipe_CreateMegaDolly = "Summon she who shall not be named",
 }

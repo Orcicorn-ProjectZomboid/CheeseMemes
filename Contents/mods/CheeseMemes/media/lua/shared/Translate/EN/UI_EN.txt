@@ -3,7 +3,6 @@ UI_EN = {
     UI_Intro2 = "THE WORLD NEEDS A HERO IN ORDER TO SURVIVE",
     UI_Intro3 = "UNFORTUNATELY ALL WE HAVE IS CHEESE",
     UI_ClickToSkip = "God help us all",
-
     UI_Profession_Streamer = "Streamer",
     UI_Profession_Streamer_Desc = "You are a twitch streamer",
     UI_Trait_SmallPP = "Small PP",
