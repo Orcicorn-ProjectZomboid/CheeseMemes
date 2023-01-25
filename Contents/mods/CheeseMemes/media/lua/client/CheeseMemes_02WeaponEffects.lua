@@ -81,8 +81,10 @@ CheeseMemes.Weapons.MeltSomeFaces = function(target, player)
             -- sometimes when the fire does trigger, the TARGET shouts, not the attacker.
             if not target:isOnFire() then 
                 target:SetOnFire();
-                CheeseMemes.Functions.Say(getText("IGUI_AxelRosePVP1", target:getDisplayName()))
-                CheeseMemes.Functions.Say(getText("IGUI_AxelRosePVP2"));
+                if getPlayer() == player then 
+                    CheeseMemes.Functions.Say(getText("IGUI_AxelRosePVP1", target:getDisplayName()))
+                    CheeseMemes.Functions.Say(getText("IGUI_AxelRosePVP2"));
+                end
             end 
         end 
     end
