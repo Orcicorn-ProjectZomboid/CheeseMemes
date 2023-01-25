@@ -1,29 +1,36 @@
+-- ---------------------------------------------------------- --
+-- OBJECT INITIALIZATION ------------------------------------ --
+-- ---------------------------------------------------------- --
 require "CheeseMemes_00Shared.lua";
 
-CheeseMemes.Weapons.Moan = function(target)
-    -- Must be a zombie and must pass a % random check
-    if not instanceof(target, "IsoZombie") then return; end;
-    if ZombRand(100) > 5 then return; end;
-    
-    -- Determine the Male/Female sound effect file name
-    local sound = "SamuelMoan";
-    if target:isFemale() then 
-        sound = sound .. "Female";
-    else
-        sound = sound .. "Male";
-    end
 
-    -- Pick a random sound effect. We go 0 to Max+1 since the ceil/floor functions
-    -- in ZombRand cause the start/stop integers to only get 1/2 a chance compared to others
-    local maxSounds = 3
-    local random = ZombRand(0, maxSounds + 1);
-    if random < 1 then random = 1; end;
-    if random > maxSounds then random = maxSounds; end;
-
-    -- Play the sound
-    CheeseMemes.Functions.EmitSound(target, sound)
+-- ---------------------------------------------------------- --
+-- WEAPON FUNCTIONS ----------------------------------------- --
+-- ---------------------------------------------------------- --
+--[[
+    CheeseMemes.Weapons.CreateGlass
+    When the crowbarski is used as a weapon it instantly breaks.  When
+    that occurs we create a pile of glass on the ground.
+    @params     IsoCharacter/IsoZombie      Required        The Character/Zombie being hit
+    @returns    nothing
+    @trigger    CheeseMemes.Events.OnHitEvents
+]]
+CheeseMemes.Weapons.CreateGlass = function(target)
+    -- Get the location of the target and put broken glass at their feet
+    local sq = getSquare(target:getX(), target:getY(), target:getZ());
+    sq:addBrokenGlass();
 end
 
+
+--[[
+    CheeseMemes.Weapons.KneeCapABitch
+    Handles the attack functionality of the Katanya Harding.
+    if a zombie, they're knocked down and forced to crawl but if you
+    hit a player in PvP we break their right leg like Nancy Kerrigan
+    @params     IsoCharacter/IsoZombie      Required        The player/zombie being hit
+    @returns    nothing
+    @trigger    CheeseMemes.Events.OnHitEvents
+]]
 CheeseMemes.Weapons.KneeCapABitch = function(target)
     if instanceof(target, "IsoZombie") then
         -- if the zombie can walk, stagger then break their legs
@@ -46,6 +53,16 @@ CheeseMemes.Weapons.KneeCapABitch = function(target)
     end
 end
 
+
+--[[
+    CheeseMemes.Weapons.MeltSomeFaces
+    Handles the attack routines from the "AxelRose" axe which produces a random
+    attempt at lighting the target on fire.
+    @params     IsoCharacter/IsoZombie      Required        The Player/Zombie being hit
+    @params     IsoCharacter                Requirewd       The character doing the attacking
+    @returns    nothing
+    @trigger    CheeseMemes.Events.OnHitEvents
+]]
 CheeseMemes.Weapons.MeltSomeFaces = function(target, player)
     -- If Target is a zombie, small chance
     if instanceof(target, "IsoZombie") then 
@@ -60,6 +77,8 @@ CheeseMemes.Weapons.MeltSomeFaces = function(target, player)
         end
     elseif instanceof(target, "IsoPlayer") then 
         if ZombRand(100) < 25 then 
+            -- When it triggers sometimes fire triggers, sometimes it does not
+            -- sometimes when the fire does trigger, the TARGET shouts, not the attacker.
             if not target:isOnFire() then 
                 target:SetOnFire();
                 CheeseMemes.Functions.Say(getText("IGUI_AxelRosePVP1", target:getDisplayName()))
@@ -69,7 +88,35 @@ CheeseMemes.Weapons.MeltSomeFaces = function(target, player)
     end
 end
 
-CheeseMemes.Weapons.CreateGlass = function(target)
-    local sq = getSquare(target:getX(), target:getY(), target:getZ());
-    sq:addBrokenGlass();
+
+--[[
+    CheeseMemes.Weapons.Moan
+    Handles the possibility of a zombie moaning if they are hit by
+    Samuel Knight and choose a random sex-based voice line to play
+    @params     IsoCharacter/IsoZombie      Required        The Player/Zombie being hit
+    @returns    nothing
+    @trigger    CheeseMemes.Events.OnHitEvents
+]]
+CheeseMemes.Weapons.Moan = function(target)
+    -- Must be a zombie and must pass a % random check
+    if not instanceof(target, "IsoZombie") then return; end;
+    if ZombRand(100) > 5 then return; end;
+    
+    -- Determine the Male/Female sound effect file name
+    local sound = "SamuelMoan";
+    if target:isFemale() then 
+        sound = sound .. "Female";
+    else
+        sound = sound .. "Male";
+    end
+
+    -- Pick a random sound effect. We go 0 to Max+1 since the ceil/floor functions
+    -- in ZombRand cause the start/stop integers to only get 1/2 a chance compared to others
+    local maxSounds = 3
+    local random = ZombRand(0, maxSounds + 1);
+    if random < 1 then random = 1; end;
+    if random > maxSounds then random = maxSounds; end;
+
+    -- Play the sound
+    CheeseMemes.Functions.EmitSound(target, sound)
 end

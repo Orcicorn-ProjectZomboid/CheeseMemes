@@ -1,6 +1,7 @@
 require "Definitions/AttachedWeaponDefinitions"
 
 -- Katanya Harding
+-- Same spawn options as the Katana
 AttachedWeaponDefinitions.KatanyaHarding = {
     chance = 1,
 	weaponLocation = {"Knife Right Leg"},
@@ -13,6 +14,7 @@ AttachedWeaponDefinitions.KatanyaHarding = {
 }
 
 -- Axel Rose
+-- Same spawn options as the FireAxe
 AttachedWeaponDefinitions.AxelRose = {
 	chance = 2,
 	weaponLocation = {"Axe Back"},
@@ -25,6 +27,7 @@ AttachedWeaponDefinitions.AxelRose = {
 }
 
 -- Crowbarski
+-- Same spawn options as the Crowbar
 AttachedWeaponDefinitions.Crowbarski = {
 	chance = 3,
 	weaponLocation = {"Crowbar Back"},

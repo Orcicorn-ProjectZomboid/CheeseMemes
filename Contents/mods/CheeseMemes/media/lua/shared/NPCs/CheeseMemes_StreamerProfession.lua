@@ -1,14 +1,32 @@
 require('NPCs/MainCreationMethods');
 StreamerProfession = StreamerProfession or {};
 
+-- ---------------------------------------------------------- --
+-- PROFESSION AND TRAIT FUNCTIONS --------------------------- --
+-- ---------------------------------------------------------- --
 
--- Add the Small PP Trait (it does nothing)
+--[[
+    StreamerProfession.AddTraits
+    Add the "Small PP" trait to the available list of traits in game.
+    However it is not visible as you can not spend points on it.
+    The trait itself does absolutely nothing. it's just a meme icon
+    @params     none
+    @returns    nothing
+    @triggers   Events.OnGameBoot
+]]
 StreamerProfession.AddTraits = function()
     local traitSmallPP = TraitFactory.addTrait("smallpp", getText("UI_Trait_SmallPP"), 0, getText("UI_Trait_SmallPP_Desc"), false, false);
 end
 
 
--- Add the Streamer profession
+--[[
+    StreamerProfession.DoProfessions
+    Adds the Streamer profession to the character creation window and attaches
+    the SmallPP trait to the profession when selected.
+    @params     none
+    @returns    nothing
+    @triggers   Events.OnGameBoot
+]]
 StreamerProfession.DoProfessions = function()
     local streamer = ProfessionFactory.addProfession("streamer", getText("UI_Profession_Streamer"), "prof_streamer", 0, getText("UI_Profession_Streamer_Desc"));
 
@@ -27,7 +45,16 @@ StreamerProfession.DoProfessions = function()
     end
 end
 
+-- ---------------------------------------------------------- --
+-- EVENT FUNCTIONS ------------------------------------------ --
+-- ---------------------------------------------------------- --
+Events.OnGameBoot.Add(StreamerProfession.AddTraits);
+Events.OnGameBoot.Add(StreamerProfession.DoProfessions);
 
+
+-- ---------------------------------------------------------- --
+-- SUPER HACKY FIX ------------------------------------------ --
+-- ---------------------------------------------------------- --
 -- For some reason when you die mid-game and start a new character all the professions
 -- are reset back to normal. To make matters worse, there's no Character event to bind to.
 -- So as dumb as it is, we store the old profession function into a variable
@@ -40,8 +67,3 @@ StreamerProfession.DoProfessionsMidGame = function ()
     StreamerProfession.DoProfessions();
 end
 BaseGameCharacterDetails.DoProfessions = StreamerProfession.DoProfessionsMidGame;
-
-
--- When the game loads, inject our professions and traits into the lists
-Events.OnGameBoot.Add(StreamerProfession.AddTraits);
-Events.OnGameBoot.Add(StreamerProfession.DoProfessions);
