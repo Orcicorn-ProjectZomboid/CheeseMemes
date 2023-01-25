@@ -33,7 +33,7 @@ CheeseMemes.Recipes.Crowbarski = function(items, result, player)
     if items then 
         crowbarID = tonumber(string.sub(items:get(0):getID(), -4))
         if not items:get(0):isBroken() then
-            crowbarValue = FormatCommas((10000 - crowbarID) * 4269)
+            crowbarValue = CheeseMemes.Functions.FormatCommas((10000 - crowbarID) * 4269)
             crowbarNote = "";
         end
     end
