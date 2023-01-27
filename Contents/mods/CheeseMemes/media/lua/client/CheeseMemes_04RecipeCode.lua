@@ -78,7 +78,7 @@ CheeseMemes.Recipes.Crowbarski = function(items, result, player)
 
     -- Create the Certificate of Authenticity
     result:addPage(1, cert);
-    result:setLockedBy("JennyUpTopWithCheese#" .. CheeseMemes.Functions.Timestamp);
+    result:setLockedBy("WHCD#" .. CheeseMemes.Functions.Timestamp());
 end
 
 
