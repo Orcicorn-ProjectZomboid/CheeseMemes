@@ -76,12 +76,10 @@ CheeseMemes.Weapons.MeltSomeFaces = function(target, player)
             end
         end
     elseif instanceof(target, "IsoPlayer") then 
-        if ZombRand(100) < 25 then 
-            -- When it triggers sometimes fire triggers, sometimes it does not
-            -- sometimes when the fire does trigger, the TARGET shouts, not the attacker.
-            if not target:isOnFire() then 
-                target:SetOnFire();
-                if getPlayer() == player then 
+        if getPlayer() == player then                       -- Only trigger from the attacker's account
+            if ZombRand(100) < 25 then 
+                if not target:isOnFire() then 
+                    target:SetOnFire();
                     CheeseMemes.Functions.Say(getText("IGUI_AxelRosePVP1", target:getDisplayName()))
                     CheeseMemes.Functions.Say(getText("IGUI_AxelRosePVP2"));
                 end
