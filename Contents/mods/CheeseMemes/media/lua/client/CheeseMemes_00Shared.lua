@@ -162,8 +162,8 @@ end
     @trigger    multiple
 ]]
 CheeseMemes.Functions.Say = function(message)
-    getPlayer():Say(message)
-    -- processSayMessage(message)
+    -- getPlayer():Say(message)
+    processSayMessage(message)
 end
 
 
