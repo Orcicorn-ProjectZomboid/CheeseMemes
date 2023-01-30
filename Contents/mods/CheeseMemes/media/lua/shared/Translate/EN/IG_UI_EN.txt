@@ -1,4 +1,5 @@
 IGUI_EN = {
+    IGUI_invpanel_weight = "Encummies",
     IGUI_ItemCat_Poster = "Poster",
     IGUI_ItemCat_Rat = "Rat",
     IGUI_PlayerText_Callout1New = "JENNY!",

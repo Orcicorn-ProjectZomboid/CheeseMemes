@@ -1,4 +1,9 @@
 Tooltip_EN = {
+  	Tooltip_item_Weight = "Encummies",
+    Tooltip_item_StackWeight = "Stack Encummies",
+    Tooltip_container_Weight_Reduction = "Encummies Reduction",
+    Tooltip_Sling = "Weapon attachment. Reduces firearm carry-encummies.",
+	Tooltip_FiberglassStock = "Weapon attachment. Decreases firearm encummies and increases accuracy.",
     Tooltip_KatanyaHarding = ""Property of Jeff Gillooly"",
     Tooltip_AxelRose = "Small chance to melt faces",
     Tooltip_Crowbarski = "Who the fuck makes a crowbar out of crystal?!",
