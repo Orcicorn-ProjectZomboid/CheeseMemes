@@ -1,13 +1,18 @@
 IGUI_EN = {
     IGUI_invpanel_weight = "Encummies",
+
     IGUI_ItemCat_Poster = "Poster",
     IGUI_ItemCat_Rat = "Rat",
+
     IGUI_PlayerText_Callout1New = "JENNY!",
     IGUI_PlayerText_Callout2New = "HIYAAAAAAAAAAAAH!",
     IGUI_PlayerText_Callout3New = "GET YOUR ASS OVER HERE",
     IGUI_PlayerText_Callout1Sneak = "pssst, I'm a sneaky bitch",
     IGUI_PlayerText_Callout2Sneak = "Ohhhhh baby dolly",
     IGUI_PlayerText_Callout3Sneak = "here kitty kitty kitty",
+
+    IGUI_AxelRosePVP1 = "Do you know where you are %1?",
+    IGUI_AxelRosePVP2 = "YOU'RE IN THE JUNGLE BABY",
     IGUI_Crowbarski_Line00 = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     IGUI_Crowbarski_Line01 = "~ CERTIFICATE OF AUTHENTICITY ~",
     IGUI_Crowbarski_Line02 = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
@@ -16,15 +21,13 @@ IGUI_EN = {
     IGUI_Crowbarski_Line05 = "Estimated value $%1.00 USD%2",
     IGUI_Crowbarski_Line06 = "Verified %1",
     IGUI_Crowbarski_Line07 = "Authenticity guaranteed by WHCD Inc https://wellhungchubbydudes.com/",
-    IGUI_R4KBook = "I was born on a cold Chi-caw-go night..",
     IGUI_DammitPoss = "Dammit Poss!",
     IGUI_MegaDolly = "IT'S ALIVVVEEE!!!!!!",
     IGUI_MegaDollyFeed = "Feed",
     IGUI_MegaDollyTooltip = "MECHA DOLLY DEMANDS BATTERIES... NOW!",
     IGUI_MegaDollySpam = "Try again in a few seconds",
     IGUI_MegaDollyLoot = "ALL HAIL MECHA-DOLLY",
-    IGUI_AxelRosePVP1 = "Do you know where you are %1?",
-    IGUI_AxelRosePVP2 = "YOU'RE IN THE JUNGLE BABY",
+    IGUI_R4KBook = "I was born on a cold Chi-caw-go night..",
     IGUI_SniffDavid = "Sniff David",
     IGUI_SniffDavidLine1 = "What am I doing with my life",
     IGUI_SniffDavidLine2 = "Oh he smells like daisies",
@@ -60,5 +63,5 @@ IGUI_EN = {
     IGUI_CheeseQuotes25 = "Jen-knee",
     IGUI_CheeseQuotes26 = "I may not be a smart man... that's it.",
     IGUI_CheeseQuotes27 = "Fucking die already.. christ, just die",
-    IGUI_CheeseQuotes28 = "OHHHHHHH Baby Dolly",
+    IGUI_CheeseQuotes28 = "OHHHHHHH Baby Dolly",    
 }

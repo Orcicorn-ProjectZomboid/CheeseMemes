@@ -2,9 +2,12 @@ UI_EN = {
     UI_Intro1 = "THERE WAS NO HOPE OF SURVIVAL", 
     UI_Intro2 = "THE WORLD NEEDS A HERO IN ORDER TO SURVIVE",
     UI_Intro3 = "UNFORTUNATELY ALL WE HAVE IS CHEESE",
+
     UI_ClickToSkip = "God help us all",
+
     UI_Profession_Streamer = "Streamer",
     UI_Profession_Streamer_Desc = "You are a twitch streamer",
+    
     UI_Trait_SmallPP = "Small PP",
     UI_Trait_SmallPP_Desc = "You got the short-end of the stick<br>No matter what anyone says,<br>there's no real benefit to this",
 }
