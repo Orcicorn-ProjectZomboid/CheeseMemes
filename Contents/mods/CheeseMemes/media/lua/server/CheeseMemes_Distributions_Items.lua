@@ -45,6 +45,34 @@ table.insert(SuburbsDistributions["all"]["bin"].items, 0.01);
 table.insert(SuburbsDistributions["all"]["inventorymale"].items, "Base.PossSoda");
 table.insert(SuburbsDistributions["all"]["inventorymale"].items, 0.0001);
 
+-- Kit Kat Bar (Anywhere chocolate is found)
+table.insert(ProceduralDistributions["list"]["CafeteriaSnacks"].items, "Base.KitKatBar");
+table.insert(ProceduralDistributions["list"]["CafeteriaSnacks"].items, 5);
+table.insert(ProceduralDistributions["list"]["CandyStoreSnacks"].items, "Base.KitKatBar");
+table.insert(ProceduralDistributions["list"]["CandyStoreSnacks"].items, 5);
+table.insert(ProceduralDistributions["list"]["ClassroomDesk"].items, "Base.KitKatBar");
+table.insert(ProceduralDistributions["list"]["ClassroomDesk"].items, 1);
+table.insert(ProceduralDistributions["list"]["CrateChocolate"].items, "Base.KitKatBar");
+table.insert(ProceduralDistributions["list"]["CrateChocolate"].items, 10);
+table.insert(ProceduralDistributions["list"]["GasStorageCombo"].items, "Base.KitKatBar");
+table.insert(ProceduralDistributions["list"]["GasStorageCombo"].items, 6);
+table.insert(ProceduralDistributions["list"]["GigamartCandy"].items, "Base.KitKatBar");
+table.insert(ProceduralDistributions["list"]["GigamartCandy"].items, 6);
+table.insert(ProceduralDistributions["list"]["GroceryStorageCrate1"].items, "Base.KitKatBar");
+table.insert(ProceduralDistributions["list"]["GroceryStorageCrate1"].items, 0.8);
+table.insert(ProceduralDistributions["list"]["KitchenBaking"].items, "Base.KitKatBar");
+table.insert(ProceduralDistributions["list"]["KitchenBaking"].items, 2);
+table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, "Base.KitKatBar");
+table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, 2);
+table.insert(ProceduralDistributions["list"]["PrisonCellRandom"].items, "Base.KitKatBar");
+table.insert(ProceduralDistributions["list"]["PrisonCellRandom"].items, 2);
+table.insert(ProceduralDistributions["list"]["StoreShelfCombo"].items, "Base.KitKatBar");
+table.insert(ProceduralDistributions["list"]["StoreShelfCombo"].items, 8);
+table.insert(ProceduralDistributions["list"]["StoreShelfSnacks"].items, "Base.KitKatBar");
+table.insert(ProceduralDistributions["list"]["StoreShelfSnacks"].items, 6);
+table.insert(ProceduralDistributions["list"]["TheatreSnacks"].items, "Base.KitKatBar");
+table.insert(ProceduralDistributions["list"]["TheatreSnacks"].items, 7);
+
 -- Charlie's Lego Box (Plus possible manual)
 table.insert(ProceduralDistributions["list"]["CrateToys"].items, "Base.CharliesLegoBox");
 table.insert(ProceduralDistributions["list"]["CrateToys"].items, 1);

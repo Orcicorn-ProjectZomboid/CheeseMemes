@@ -28,4 +28,5 @@ Tooltip_EN = {
     Tooltip_GlassesCheeseGamer = "Courtesy of Ubisoft",
     Tooltip_TShirtRoyaleWithCheese = "https://tinyurl.com/RoyaleMerch",
     Tooltip_TShirtJennyShakes = "Wearer becomes immune to incessant nagging",
+    Tooltip_KitKatBar = "Break me off a piece of that Fancy Feast",
 }

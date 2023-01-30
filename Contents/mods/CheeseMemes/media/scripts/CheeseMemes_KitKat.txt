@@ -1,0 +1,49 @@
+module Base {
+    model KitKatBar {
+		mesh = WorldItems/Rice,
+		texture = WorldItems/KitKatPackage,
+		scale = 0.2,
+	}
+
+    model KitKatFinger {
+        mesh = WorldItems/DehydratedMeatStick,
+        scale = 0.18,
+    }
+
+    item KitKatBar {
+		DisplayName = KitKatBar,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = KitKatBar,
+		WorldStaticModel = KitKatBar,
+        Tooltip = Tooltip_KitKatBar,
+	}
+
+    item KitKatFinger {
+        DisplayName = KitKatFinger,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.05,
+		Icon = KitKatFinger,
+		EvolvedRecipe = Cake:6;PieSweet:6;ConeIcecream:3,
+		FoodType = NoExplicit,
+		Packaged = TRUE,
+		HungerChange = -6,
+		UnhappyChange = -3,
+		Calories = 210,
+		Carbohydrates = 25,
+		Lipids = 12,
+		Proteins = 3,
+		WorldStaticModel = KitKatFinger,
+    }
+
+    recipe OpenKitKatBar {
+        KitKatBar,
+        Result: KitKatFinger=4,
+        Time: 60.0,
+        Category: Cooking,
+        Sound:OpenSeedPacket,
+    }
+
+}

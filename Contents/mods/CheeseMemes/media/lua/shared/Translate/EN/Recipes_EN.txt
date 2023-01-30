@@ -18,4 +18,5 @@ Recipe_EN = {
     Recipe_ConsumeDiscCheese1 = "Extract posters (requires computer)",
     Recipe_CreateBigDolly = "Combine into Big Dolly",
     Recipe_CreateMegaDolly = "Summon she who shall not be named",
+    Recipe_OpenKitKatBar = "Unwrap",
 }
