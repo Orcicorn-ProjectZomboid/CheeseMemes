@@ -34,4 +34,5 @@ Tooltip_EN = {
     Tooltip_TShirtRoyaleWithCheese = "https://tinyurl.com/RoyaleMerch",
     Tooltip_TShirtJennyShakes = "Wearer becomes immune to incessant nagging",
     Tooltip_KitKatBar = "Break me off a piece of that Fancy Feast",
+    Tooltip_BookServerAutomation = "By R4K and Orc",
 }

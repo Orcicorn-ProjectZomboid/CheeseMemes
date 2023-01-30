@@ -58,5 +58,6 @@ ItemName_EN = {
     ItemName_Base.MagazineCheese4 = "Bild Zeitschrift",
     ItemName_Base.GlassesCheeseGamer = "Gamer Glasses",
     ItemName_Base.TShirtRoyaleWithCheese = "Royale With Cheese Merch",
-    ItemName_Base.TShirtJennyShakes = "Jenny Shakes T-Shirt",   
+    ItemName_Base.TShirtJennyShakes = "Jenny Shakes T-Shirt",
+    ItemName_Base.BookServerAutomation = "Server Automation for Dummies",
 }

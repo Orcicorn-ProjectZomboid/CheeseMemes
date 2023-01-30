@@ -5,6 +5,50 @@ require 'Items/SuburbsDistributions'
 table.insert(SuburbsDistributions["all"]["bin"].items, "Base.R4ksbook");
 table.insert(SuburbsDistributions["all"]["bin"].items, 1);
 
+-- Server Automation for Dummies (Where books are found)
+table.insert(ProceduralDistributions["list"]["BathroomShelf"].items, "Base.BookServerAutomation");
+table.insert(ProceduralDistributions["list"]["BathroomShelf"].items, 1);
+table.insert(ProceduralDistributions["list"]["ClassroomDesk"].items, "Base.BookServerAutomation");
+table.insert(ProceduralDistributions["list"]["ClassroomDesk"].items, 0.1);
+table.insert(ProceduralDistributions["list"]["ClassroomMisc"].items, "Base.BookServerAutomation");
+table.insert(ProceduralDistributions["list"]["ClassroomMisc"].items, 2);
+table.insert(ProceduralDistributions["list"]["ClassroomShelves"].items, "Base.BookServerAutomation");
+table.insert(ProceduralDistributions["list"]["ClassroomShelves"].items, 3);
+table.insert(ProceduralDistributions["list"]["ControlRoomCounter"].items, "Base.BookServerAutomation");
+table.insert(ProceduralDistributions["list"]["ControlRoomCounter"].items, 1);
+table.insert(ProceduralDistributions["list"]["CrateBooks"].items, "Base.BookServerAutomation");
+table.insert(ProceduralDistributions["list"]["CrateBooks"].items, 5);
+table.insert(ProceduralDistributions["list"]["CrateComputer"].items, "Base.BookServerAutomation");
+table.insert(ProceduralDistributions["list"]["CrateComputer"].items, 5);
+table.insert(ProceduralDistributions["list"]["CrateElectronics"].items, "Base.BookServerAutomation");
+table.insert(ProceduralDistributions["list"]["CrateElectronics"].items, 1);
+table.insert(ProceduralDistributions["list"]["CrateOfficeSupplies"].items, "Base.BookServerAutomation");
+table.insert(ProceduralDistributions["list"]["CrateOfficeSupplies"].items, 5);
+table.insert(ProceduralDistributions["list"]["DeskGeneric"].items, "Base.BookServerAutomation");
+table.insert(ProceduralDistributions["list"]["DeskGeneric"].items, 2);
+table.insert(ProceduralDistributions["list"]["ElectronicStoreMagazines"].items, "Base.BookServerAutomation");
+table.insert(ProceduralDistributions["list"]["ElectronicStoreMagazines"].items, 2);
+table.insert(ProceduralDistributions["list"]["EngineerTools"].items, "Base.BookServerAutomation");
+table.insert(ProceduralDistributions["list"]["EngineerTools"].items, 0.5);
+table.insert(ProceduralDistributions["list"]["FilingCabinetGeneric"].items, "Base.BookServerAutomation");
+table.insert(ProceduralDistributions["list"]["FilingCabinetGeneric"].items, 1);
+table.insert(ProceduralDistributions["list"]["LibraryBooks"].items, "Base.BookServerAutomation");
+table.insert(ProceduralDistributions["list"]["LibraryBooks"].items, 2);
+table.insert(ProceduralDistributions["list"]["LibraryCounter"].items, "Base.BookServerAutomation");
+table.insert(ProceduralDistributions["list"]["LibraryCounter"].items, 2);
+table.insert(ProceduralDistributions["list"]["OfficeCounter"].items, "Base.BookServerAutomation");
+table.insert(ProceduralDistributions["list"]["OfficeCounter"].items, 1);
+table.insert(ProceduralDistributions["list"]["OfficeDesk"].items, "Base.BookServerAutomation");
+table.insert(ProceduralDistributions["list"]["OfficeDesk"].items, 4);
+table.insert(ProceduralDistributions["list"]["OfficeDeskHome"].items, "Base.BookServerAutomation");
+table.insert(ProceduralDistributions["list"]["OfficeDeskHome"].items, 1);
+table.insert(ProceduralDistributions["list"]["OfficeDrawers"].items, "Base.BookServerAutomation");
+table.insert(ProceduralDistributions["list"]["OfficeDrawers"].items, 2);
+table.insert(ProceduralDistributions["list"]["PostOfficeBooks"].items, "Base.BookServerAutomation");
+table.insert(ProceduralDistributions["list"]["PostOfficeBooks"].items, 2);
+table.insert(ProceduralDistributions["list"]["ShelfGeneric"].items, "Base.BookServerAutomation");
+table.insert(ProceduralDistributions["list"]["ShelfGeneric"].items, 0.1);
+
 -- Poss Cola (Where soda is found, sometimes trash or dead zombies)
 table.insert(ProceduralDistributions["list"]["BarCounterMisc"].items, "Base.PossSoda");
 table.insert(ProceduralDistributions["list"]["BarCounterMisc"].items, 3);

@@ -1,0 +1,25 @@
+module Base {
+    model BookServerAutomationStatic {
+		mesh = Book,
+        texture = WorldItems/BookServerAutomation,
+	}
+
+	model BookServerAutomation {
+        mesh = WorldItems/BookClosed,
+        texture = WorldItems/BookServerAutomation,
+        scale = 0.4,
+    }
+
+    item BookServerAutomation {
+        DisplayCategory = Literature,
+        Weight = 0.2,
+        Type = Literature,
+        DisplayName = BookServerAutomation,
+        StressChange = 10,
+        Icon = BookServerAutomation,
+        BoredomChange = -25,
+        StaticModel = BookServerAutomationStatic,
+        WorldStaticModel = BookServerAutomation,
+        Tooltip = Tooltip_BookServerAutomation,
+    }
+}
