@@ -76,13 +76,15 @@ CheeseMemes.Weapons.MeltSomeFaces = function(target, player)
             end
         end
     elseif instanceof(target, "IsoPlayer") then 
-        if getPlayer() == player then                       -- Only trigger from the attacker's account
-            if ZombRand(100) < 25 then 
-                if not target:isOnFire() then 
-                    target:SetOnFire();
-                    CheeseMemes.Functions.Say(getText("IGUI_AxelRosePVP1", target:getDisplayName()))
-                    CheeseMemes.Functions.Say(getText("IGUI_AxelRosePVP2"));
-                end
+        if ZombRand(100) <= 25 then
+            local bodyDamage = target:getBodyDamage()
+            bodyDamage:getBodyPart(BodyPartType.Head):setBurned();
+            bodyDamage:getBodyPart(BodyPartType.Neck):setBurned();
+            target:splatBloodFloorBig();
+            target:SetOnFire();
+            if getPlayer() == player then       -- Only attacker should shout
+                CheeseMemes.Functions.Say(getText("IGUI_AxelRosePVP1", target:getDisplayName()))
+                CheeseMemes.Functions.Say(getText("IGUI_AxelRosePVP2"));
             end 
         end 
     end
