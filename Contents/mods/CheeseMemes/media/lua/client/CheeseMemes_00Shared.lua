@@ -133,7 +133,7 @@ CheeseMemes.Functions.NotableDates = function()
     -- Loop through the dates and determine if this is an important date
     for key,_ in ipairs(importantDates) do 
         if (importantDates[key][1] == month) and (importantDates[key][2] == day) then 
-            CheeseMemes.Functions.HaloText(importantDates[key][3]);
+            CheeseMemes.Functions.HaloText(getPlayer(), importantDates[key][3]);
             return;     -- Only one announcement per day
         end
     end
