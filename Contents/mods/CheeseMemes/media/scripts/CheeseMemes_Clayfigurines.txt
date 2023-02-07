@@ -1,0 +1,55 @@
+module Base {
+    model FigurineSpiffo {
+        mesh = WorldItems/SpiffoPlushie,
+        texture = WorldItems/FigurineSpiffo,
+        scale = 0.2,
+    }
+
+    model FigurineAxe {
+		mesh = Weapons/2Handed/WoodAxe,
+        scale = 0.22,
+        attachment world {
+			offset = 0.0120 0.2500 0.0000,
+			rotate = 180.0000 0.0000 90.0000,
+		}
+	}
+
+    model FigurineCrowbar {
+        mesh = Weapons/1Handed/Crowbar,
+        scale = 0.22,
+        attachment world {
+            offset = 0.0000 0.1700 0.0000,
+            rotate = 0.0000 90.0000 90.0000,
+        }
+	}
+
+    item FigurineSpiffo {
+        DisplayCategory = Figurine,
+        Weight = 0.05,
+        Type = Normal,
+        DisplayName = FigurineSpiffo,
+        Tooltip = Tooltip_Figurines,
+        Icon = FigurineSpiffo,
+        WorldStaticModel = FigurineSpiffo,
+    }
+
+    item FigurineAxe {
+        DisplayCategory = Figurine,
+        Weight = 0.05,
+        Type = Normal,
+        DisplayName = FigurineAxe,
+        Tooltip = Tooltip_Figurines,
+        Icon = WoodAxe,
+        WorldStaticModel = FigurineAxe,
+    }
+
+    item FigurineCrowbar {
+        DisplayCategory = Figurine,
+        Weight = 0.05,
+        Type = Normal,
+        DisplayName = FigurineCrowbar,
+        Tooltip = Tooltip_Figurines,
+        Icon = Crowbar,
+        WorldStaticModel = FigurineCrowbar,
+    }
+}

@@ -190,3 +190,35 @@ table.insert(ProceduralDistributions["list"]["SpiffosKitchenCounter"].items, "Ba
 table.insert(ProceduralDistributions["list"]["SpiffosKitchenCounter"].items, 8);
 table.insert(ProceduralDistributions["list"]["WardrobeChild"].items, "Base.RemmyRat");
 table.insert(ProceduralDistributions["list"]["WardrobeChild"].items, 0.001);
+
+-- Clay Figurine (Spiffo)
+table.insert(ProceduralDistributions["list"]["CrateToys"].items, "Base.FigurineSpiffo");
+table.insert(ProceduralDistributions["list"]["CrateToys"].items, 1);
+table.insert(ProceduralDistributions["list"]["DaycareDesk"].items, "Base.FigurineSpiffo");
+table.insert(ProceduralDistributions["list"]["DaycareDesk"].items, 1);
+table.insert(ProceduralDistributions["list"]["Gifts"].items, "Base.FigurineSpiffo");
+table.insert(ProceduralDistributions["list"]["Gifts"].items, 4);
+table.insert(ProceduralDistributions["list"]["GigamartToys"].items, "Base.FigurineSpiffo");
+table.insert(ProceduralDistributions["list"]["GigamartToys"].items, 5);
+table.insert(ProceduralDistributions["list"]["Hobbies"].items, "Base.FigurineSpiffo");
+table.insert(ProceduralDistributions["list"]["Hobbies"].items, 0.5);
+
+-- Clay Figurine (Axe)
+table.insert(ProceduralDistributions["list"]["CrateToys"].items, "Base.FigurineAxe");
+table.insert(ProceduralDistributions["list"]["CrateToys"].items, 1);
+table.insert(ProceduralDistributions["list"]["Gifts"].items, "Base.FigurineAxe");
+table.insert(ProceduralDistributions["list"]["Gifts"].items, 2);
+table.insert(ProceduralDistributions["list"]["GigamartToys"].items, "Base.FigurineAxe");
+table.insert(ProceduralDistributions["list"]["GigamartToys"].items, 3);
+table.insert(ProceduralDistributions["list"]["Hobbies"].items, "Base.FigurineAxe");
+table.insert(ProceduralDistributions["list"]["Hobbies"].items, 0.25);
+
+-- Clay Figurine (Crowbar)
+table.insert(ProceduralDistributions["list"]["CrateToys"].items, "Base.FigurineCrowbar");
+table.insert(ProceduralDistributions["list"]["CrateToys"].items, 1);
+table.insert(ProceduralDistributions["list"]["Gifts"].items, "Base.FigurineCrowbar");
+table.insert(ProceduralDistributions["list"]["Gifts"].items, 2);
+table.insert(ProceduralDistributions["list"]["GigamartToys"].items, "Base.FigurineCrowbar");
+table.insert(ProceduralDistributions["list"]["GigamartToys"].items, 3);
+table.insert(ProceduralDistributions["list"]["Hobbies"].items, "Base.FigurineCrowbar");
+table.insert(ProceduralDistributions["list"]["Hobbies"].items, 0.25);

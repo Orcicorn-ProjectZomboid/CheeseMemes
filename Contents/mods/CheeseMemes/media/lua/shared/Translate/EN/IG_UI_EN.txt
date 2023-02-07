@@ -3,6 +3,7 @@ IGUI_EN = {
 
     IGUI_ItemCat_Poster = "Poster",
     IGUI_ItemCat_Rat = "Rat",
+    IGUI_ItemCat_Figurine = "Figurine",
 
     IGUI_PlayerText_Callout1New = "JENNY!",
     IGUI_PlayerText_Callout2New = "HIYAAAAAAAAAAAAH!",
