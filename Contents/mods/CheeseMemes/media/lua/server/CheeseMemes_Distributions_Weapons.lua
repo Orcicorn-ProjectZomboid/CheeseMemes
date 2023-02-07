@@ -12,3 +12,35 @@ table.insert(ProceduralDistributions["list"]["SportStorageSticks"].items, 0.1);
 -- Samuel Nightstick
 table.insert(ProceduralDistributions["list"]["BedroomSideTable"].items, "Base.SamuelNighstick");
 table.insert(ProceduralDistributions["list"]["BedroomSideTable"].items, 0.4);
+
+-- Potter Wands (Classrooms)
+table.insert(ProceduralDistributions["list"]["ClassroomDesk"].items, "Base.PotterWandCheese");
+table.insert(ProceduralDistributions["list"]["ClassroomDesk"].items, 0.01);
+table.insert(ProceduralDistributions["list"]["ClassroomDesk"].items, "Base.PotterWandGeek");
+table.insert(ProceduralDistributions["list"]["ClassroomDesk"].items, 0.01);
+table.insert(ProceduralDistributions["list"]["ClassroomDesk"].items, "Base.PotterWandJenny");
+table.insert(ProceduralDistributions["list"]["ClassroomDesk"].items, 0.01);
+table.insert(ProceduralDistributions["list"]["ClassroomDesk"].items, "Base.PotterWandMadMax");
+table.insert(ProceduralDistributions["list"]["ClassroomDesk"].items, 0.01);
+table.insert(ProceduralDistributions["list"]["ClassroomDesk"].items, "Base.PotterWandSam");
+table.insert(ProceduralDistributions["list"]["ClassroomDesk"].items, 0.01);
+table.insert(ProceduralDistributions["list"]["ClassroomDesk"].items, "Base.PotterWandShewolf");
+table.insert(ProceduralDistributions["list"]["ClassroomDesk"].items, 0.01);
+table.insert(ProceduralDistributions["list"]["ClassroomDesk"].items, "Base.PotterWandOrc");
+table.insert(ProceduralDistributions["list"]["ClassroomDesk"].items, 0.01);
+
+-- Potter Wands (School Lockers)
+table.insert(ProceduralDistributions["list"]["SchoolLockers"].items, "Base.PotterWandCheese");
+table.insert(ProceduralDistributions["list"]["SchoolLockers"].items, 0.001);
+table.insert(ProceduralDistributions["list"]["SchoolLockers"].items, "Base.PotterWandGeek");
+table.insert(ProceduralDistributions["list"]["SchoolLockers"].items, 0.001);
+table.insert(ProceduralDistributions["list"]["SchoolLockers"].items, "Base.PotterWandJenny");
+table.insert(ProceduralDistributions["list"]["SchoolLockers"].items, 0.001);
+table.insert(ProceduralDistributions["list"]["SchoolLockers"].items, "Base.PotterWandMadMax");
+table.insert(ProceduralDistributions["list"]["SchoolLockers"].items, 0.001);
+table.insert(ProceduralDistributions["list"]["SchoolLockers"].items, "Base.PotterWandSam");
+table.insert(ProceduralDistributions["list"]["SchoolLockers"].items, 0.001);
+table.insert(ProceduralDistributions["list"]["SchoolLockers"].items, "Base.PotterWandShewolf");
+table.insert(ProceduralDistributions["list"]["SchoolLockers"].items, 0.001);
+table.insert(ProceduralDistributions["list"]["SchoolLockers"].items, "Base.PotterWandOrc");
+table.insert(ProceduralDistributions["list"]["SchoolLockers"].items, 0.001);
