@@ -22,7 +22,7 @@ module Base {
         category = Item,
         clip {
             file = media/sound/SamuelSwing.ogg,
-            volume = 0.85,
+            volume = 0.95,
         }
     }
 
