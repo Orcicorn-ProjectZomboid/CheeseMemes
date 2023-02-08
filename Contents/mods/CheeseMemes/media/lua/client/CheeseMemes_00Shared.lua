@@ -127,8 +127,9 @@ CheeseMemes.Functions.NotableDates = function()
     importantDates[0] = {1, 1, "SURVIVED ANOTHER YEAR!"};
     importantDates[1] = {1, 20, "Damn, forgot another anniversary"};
     importantDates[2] = {2, 9, "Happy Birthday Cheese!"};
-    importantDates[3] = {9, 21, "Happy Birthday Bill Murray"};
-    importantDates[4] = {12, 25, "Merry Christmas!"};
+    importantDates[3] = {2, 21, "Happy Birthday Charlie!"};
+    importantDates[4] = {9, 21, "Happy Birthday Bill Murray"};
+    importantDates[5] = {12, 25, "Merry Christmas!"};
 
     -- Loop through the dates and determine if this is an important date
     for key,_ in ipairs(importantDates) do 
