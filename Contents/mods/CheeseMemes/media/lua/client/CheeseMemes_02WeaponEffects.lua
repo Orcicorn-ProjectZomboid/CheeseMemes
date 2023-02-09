@@ -100,7 +100,6 @@ CheeseMemes.Weapons.Moan = function(target)
     -- Must be a zombie and must pass a % random check
     if not instanceof(target, "IsoZombie") then return; end;
     if ZombRand(100) > 10 then return; end;
-    
     -- Determine the Male/Female sound effect file name
     local sound = "SamuelMoan";
     if target:isFemale() then 
@@ -108,7 +107,7 @@ CheeseMemes.Weapons.Moan = function(target)
     else
         sound = sound .. "Male";
     end
-
+    
     -- Pick a random sound effect. We go 0 to Max+1 since the ceil/floor functions
     -- in ZombRand cause the start/stop integers to only get 1/2 a chance compared to others
     local maxSounds = 3
@@ -117,5 +116,5 @@ CheeseMemes.Weapons.Moan = function(target)
     if random > maxSounds then random = maxSounds; end;
 
     -- Play the sound
-    CheeseMemes.Functions.EmitSound(target, sound)
+    CheeseMemes.Functions.EmitSound(target, sound .. random)
 end

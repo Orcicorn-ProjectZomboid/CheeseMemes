@@ -41,7 +41,7 @@ module Base {
         clip {
             file = media/sound/SamuelMoanFemale1.ogg,
             distanceMax = 2,
-            volume = 1.25,
+            volume = 1.5,
         }
     }
 
@@ -52,7 +52,7 @@ module Base {
         clip {
             file = media/sound/SamuelMoanFemale2.ogg,
             distanceMax = 1,
-            volume = 1.25,
+            volume = 1.5,
         }
     }
 
@@ -63,7 +63,7 @@ module Base {
         clip {
             file = media/sound/SamuelMoanFemale3.ogg,
             distanceMax = 1,
-            volume = 1.25,
+            volume = 1.5,
         }
     }
 
