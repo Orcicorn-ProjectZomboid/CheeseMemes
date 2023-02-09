@@ -1,11 +1,11 @@
 version=1
-id=2922568255
+id=2930582513
 title=CheeseMemes
 description=If you've played Project Zomboid long enough you've undoubtedly run into either RoyalWithCheeseTV's twitch channel or seen many references to his channel in some of the most popular map mods in the community.  Now it's time to give back and celebrate his birthday and community a little.
 description=
 description=Introducing "[b]Cheese Memes[/b]".  This mod is full of his most cringiest jokes and his community's warped sense of humor.  For example we have the [i]Katanya Harding[/i] that break's zombie knees, an [i]Axel Rose[/i] to melt faces and even the [i]Crowbarski Crystal[/i] complete with authenticity routines to determine it's worth at auction.
 description=
-description=There's over 20 references and items, as well as nearly 30 posters submitted by JennyShakes herself.  See [url=https://steamcommunity.com/workshop/filedetails/discussion/2922568255/3762229114473926938/]this thread[/url] for details or just go in blind and find them on your own.
+description=There's over 20 references and items, as well as nearly 30 posters submitted by JennyShakes herself.  See [url=https://steamcommunity.com/workshop/filedetails/discussion/2930582513/3767860082232030679/]this thread[/url] for details or just go in blind and find them on your own.
 description=
 description=Either way, swing on by and say Happy Birthday to [url=https://twitch.tv/royalewithcheesetv]RoyaleWithCheese[/url] and give David the sniffing he deserves.
 description=
