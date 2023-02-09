@@ -98,7 +98,7 @@ end
 CheeseMemes.Weapons.Moan = function(target)
     -- Must be a zombie and must pass a % random check
     if not instanceof(target, "IsoZombie") then return; end;
-    if ZombRand(100) > 5 then return; end;
+    if ZombRand(100) > 10 then return; end;
     
     -- Determine the Male/Female sound effect file name
     local sound = "SamuelMoan";
