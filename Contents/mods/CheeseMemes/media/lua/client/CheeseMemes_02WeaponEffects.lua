@@ -69,7 +69,7 @@ CheeseMemes.Weapons.MeltSomeFaces = function(target, player)
         if ZombRand(200) == 69 then
             target:setStaggerBack(true);
             target:SetOnFire();
-            CheeseMemes.Functions.EmitSound(player, "AxelRoseProc1");
+            CheeseMemes.Functions.EmitSound(player, "AxelRoseProc" .. ZombRand(1,2));
         end
     elseif instanceof(target, "IsoPlayer") then 
         if ZombRand(100) <= 25 then
