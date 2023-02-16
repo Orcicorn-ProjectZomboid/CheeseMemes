@@ -62,3 +62,23 @@ table.insert(ProceduralDistributions["list"]["WardrobeMan"].items, "Base.TShirtJ
 table.insert(ProceduralDistributions["list"]["WardrobeMan"].items, 1);
 table.insert(ProceduralDistributions["list"]["WardrobeWoman"].items, "Base.TShirtJennyShakes");
 table.insert(ProceduralDistributions["list"]["WardrobeWoman"].items, 0.8);
+
+-- Dark's Protection Pants
+table.insert(ProceduralDistributions["list"]["LaundryLoad1"].items, "Base.DarkProtectionPants");
+table.insert(ProceduralDistributions["list"]["LaundryLoad1"].items, 0.1);
+table.insert(ProceduralDistributions["list"]["LaundryLoad2"].items, "Base.DarkProtectionPants");
+table.insert(ProceduralDistributions["list"]["LaundryLoad2"].items, 0.01);
+table.insert(ProceduralDistributions["list"]["LaundryLoad3"].items, "Base.DarkProtectionPants");
+table.insert(ProceduralDistributions["list"]["LaundryLoad3"].items, 0.1);
+table.insert(ProceduralDistributions["list"]["LaundryLoad4"].items, "Base.DarkProtectionPants");
+table.insert(ProceduralDistributions["list"]["LaundryLoad4"].items, 0.01);
+table.insert(ProceduralDistributions["list"]["LaundryLoad5"].items, "Base.DarkProtectionPants");
+table.insert(ProceduralDistributions["list"]["LaundryLoad5"].items, 0.1);
+table.insert(ProceduralDistributions["list"]["LaundryLoad6"].items, "Base.DarkProtectionPants");
+table.insert(ProceduralDistributions["list"]["LaundryLoad6"].items, 0.01);
+table.insert(ProceduralDistributions["list"]["LaundryLoad7"].items, "Base.DarkProtectionPants");
+table.insert(ProceduralDistributions["list"]["LaundryLoad7"].items, 0.1);
+table.insert(ProceduralDistributions["list"]["LaundryLoad8"].items, "Base.DarkProtectionPants");
+table.insert(ProceduralDistributions["list"]["LaundryLoad8"].items, 0.01);
+table.insert(ProceduralDistributions["list"]["WardrobeMan"].items, "Base.DarkProtectionPants");
+table.insert(ProceduralDistributions["list"]["WardrobeMan"].items, 0.02);

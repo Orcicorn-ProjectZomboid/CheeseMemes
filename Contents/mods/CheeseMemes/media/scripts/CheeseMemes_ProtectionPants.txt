@@ -1,0 +1,20 @@
+module Base {
+	model DarkProtectionPants {
+        mesh = WorldItems/Clothing/Boxers,
+        texture = clothes/underwear_darkprotectionpants,
+        scale = 0.4,
+    }
+
+    item DarkProtectionPants {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = DarkProtectionPants,
+        ClothingItem = underwear_darkprotectionpants,
+        BodyLocation = UnderwearBottom,
+        Icon = DarkProtectionPants,
+        Weight = 0.2,
+        CanHaveHoles = false,
+        WorldStaticModel = DarkProtectionPants,
+        Tooltip = Tooltip_DarkProtectionPants,
+    }
+}

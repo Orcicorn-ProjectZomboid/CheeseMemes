@@ -19,6 +19,7 @@ Tooltip_EN = {
     Tooltip_CheeseMagazine4 = "Amerikanischer Perverser wandelt unter uns",
     Tooltip_Crowbarski = "Who the fuck makes a crowbar out of crystal?!",
     Tooltip_CrowbarskiNecklace = "''Every Kiss begins with Kraesk''",
+    Tooltip_DarkProtectionPants = "Dribble Protection: 10",
     Tooltip_DiscCheese = "Insert into a Computer",
     Tooltip_Figurines = "Made with love, SheWolf",
     Tooltip_GlassesCheeseGamer = "Courtesy of Ubisoft",

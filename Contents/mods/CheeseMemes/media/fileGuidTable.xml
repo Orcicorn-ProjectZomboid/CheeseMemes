@@ -20,4 +20,9 @@
         <path>media/clothing/clothingItems/tshirt_jennyshakes.xml</path>
         <guid>bff5966c-8b17-4d58-bf25-2da1d3a812f7</guid>
     </files>
+    <files>
+        <note>Dark Protection Pants</note>
+        <path>media/clothing/clothingItems/underwear_darkprotectionpants.xml</path>
+        <guid>d38acb08-63eb-4e6b-a008-88f491d90206</guid>
+    </files>
 </fileGuidTable>

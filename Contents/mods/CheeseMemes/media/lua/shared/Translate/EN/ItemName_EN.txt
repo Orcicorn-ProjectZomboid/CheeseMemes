@@ -39,6 +39,7 @@ ItemName_EN = {
     ItemName_Base.Crowbarski = "Crowbarski",
     ItemName_Base.CrowbarskiNecklace = "Crowbarski Crystal Necklace",
     ItemName_Base.CrowbarskiCertificate = "Certificate of Authenticity",
+    ItemName_Base.DarkProtectionPants = "Protection Pants",
     ItemName_Base.DiscCheese1 = "Backup: Cheese Art #1",
     ItemName_Base.Doll = "Baby Dolly",
     ItemName_Base.FakeDolly = "Dolly?",
