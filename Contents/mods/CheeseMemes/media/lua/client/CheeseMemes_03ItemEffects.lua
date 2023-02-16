@@ -27,7 +27,7 @@ CheeseMemes.Items.GamerGlasses = function(player)
     local maxQuotes = 28;                -- IGUI_CheeseQuotesXXX
     if ZombRand(1, 100) <= 2 then 
         local quote = ZombRand(0, (maxQuotes + 1))
-        if quote <= 1 then quotes = 1; end
+        if quote < 1 then quote = 1; end
         if quote >= maxQuotes then quote = maxQuotes; end            
         CheeseMemes.Functions.Say(getText("IGUI_CheeseQuotes" .. quote));
     end
