@@ -4,8 +4,11 @@ ClothingSelectionDefinitions = ClothingSelectionDefinitions or {};
 ClothingSelectionDefinitions.streamer = {
 	Female = {
 		Tshirt = {
-			items = {"Base.TShirtJennyShakes"},
+			items = {"Base.TShirtRoyaleWithCheeseSlut"},
 		},
+		Eyes = {
+            items = {"Base.GlassesCheeseGamer"},
+        },
 	},
     Male = {
 		Tshirt = {
