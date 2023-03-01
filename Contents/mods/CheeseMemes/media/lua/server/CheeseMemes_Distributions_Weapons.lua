@@ -11,7 +11,9 @@ table.insert(ProceduralDistributions["list"]["SportStorageSticks"].items, 0.1);
 
 -- Samuel Nightstick
 table.insert(ProceduralDistributions["list"]["BedroomSideTable"].items, "Base.SamuelNighstick");
-table.insert(ProceduralDistributions["list"]["BedroomSideTable"].items, 0.4);
+table.insert(ProceduralDistributions["list"]["BedroomSideTable"].items, 1);
+table.insert(ProceduralDistributions["list"]["BedroomDresser"].items, "Base.SamuelNighstick");
+table.insert(ProceduralDistributions["list"]["BedroomDresser"].items, 0.4);
 
 -- Potter Wands (Classrooms)
 table.insert(ProceduralDistributions["list"]["ClassroomDesk"].items, "Base.PotterWandCheese");
