@@ -24,7 +24,7 @@ local lastGnomeSniff = 0;               -- Last time you sniffed David
     @trigger    CheeseMemes.Events.OnHitEvents
 ]]
 CheeseMemes.Items.GamerGlasses = function(player)
-    local maxQuotes = 28;                -- IGUI_CheeseQuotesXXX
+    local maxQuotes = 37;                -- IGUI_CheeseQuotesXXX
     if ZombRand(1, 100) <= 2 then 
         local quote = ZombRand(0, (maxQuotes + 1))
         if quote < 1 then quote = 1; end
