@@ -5,7 +5,7 @@ module Base {
 		is3D = true,
 		clip {
 			file = media/sound/GnomeLaugh.ogg,
-			distanceMax = 1,
+			distanceMax = 0,
 			volume = 0.3,
 		}
 	}
