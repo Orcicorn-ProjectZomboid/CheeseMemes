@@ -1,0 +1,4 @@
+ContextMenu_EN = {
+    ContextMenu_ShirtSexy = "Tie-up Shirt",
+    ContextMenu_ShirtUnsexy = "Untie Shirt",
+}

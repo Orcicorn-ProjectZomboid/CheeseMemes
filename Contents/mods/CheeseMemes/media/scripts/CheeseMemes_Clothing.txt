@@ -19,6 +19,8 @@ module Base {
         Type = Clothing,
         DisplayName = TShirtRoyaleWithCheese,
         ClothingItem = tshirt_royalewithcheese,
+        ClothingItemExtra = TShirtRoyaleWithCheeseSlut,
+        ClothingItemExtraOption = ShirtSexy,
 		Icon = TShirtRoyaleWithCheese,
         BodyLocation = Tshirt,
         BloodLocation = Shirt,
@@ -27,6 +29,24 @@ module Base {
         FabricType = Cotton,
         WorldStaticModel = TShirt_Ground,
         CanHaveHoles = true,
+        Tooltip = Tooltip_TShirtRoyaleWithCheese,
+	}
+
+    item TShirtRoyaleWithCheeseSlut {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = TShirtRoyaleWithCheeseSlut,
+        ClothingItem = tshirt_royalewithcheeseslut,
+        ClothingItemExtra = TShirtRoyaleWithCheese,
+        ClothingItemExtraOption = ShirtUnsexy,
+		Icon = TShirtRoyaleWithCheeseSlut,
+        BodyLocation = Tshirt,
+        BloodLocation = Shirt,
+        Insulation = 0.2,
+        WindResistance = 0.05,
+        FabricType = Cotton,
+        WorldStaticModel = Bra_Ground,
+        CanHaveHoles = false,
         Tooltip = Tooltip_TShirtRoyaleWithCheese,
 	}
 

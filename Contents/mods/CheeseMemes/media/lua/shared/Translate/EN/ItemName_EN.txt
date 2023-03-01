@@ -72,4 +72,5 @@ ItemName_EN = {
     ItemName_Base.TinyDolly = "Teeny Tiny Dolly",
     ItemName_Base.TShirtJennyShakes = "Jenny Shakes T-Shirt",
     ItemName_Base.TShirtRoyaleWithCheese = "Royale With Cheese Merch",  
+    ItemName_Base.TShirtRoyaleWithCheeseSlut = "Royale With Cheese Merch",  
 }
