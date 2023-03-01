@@ -28,6 +28,7 @@ IGUI_EN = {
     IGUI_MegaDollyTooltip = "MECHA DOLLY DEMANDS BATTERIES... NOW!",
     IGUI_MegaDollySpam = "Try again in a few seconds",
     IGUI_MegaDollyLoot = "ALL HAIL MECHA-DOLLY",
+    IGUI_MegaDollyLoot2 = "Received: '%1'",
     IGUI_R4KBook = "I was born on a cold Chi-caw-go night..",
     IGUI_SniffDavid = "Sniff David",
     IGUI_SniffDavidLine1 = "What am I doing with my life",

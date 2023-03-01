@@ -39,8 +39,8 @@ CheeseMemes.Events.OnFillContext = function(player, context, items)
         if item:getType() == "MegaDolly" then 
             local option = context:addOption(getText("IGUI_MegaDollyFeed"), item, CheeseMemes.Items.MegaDolly)
 
-            -- Disable if you don't have a bettery
-            if not getPlayer():getInventory():getFirstTypeRecurse("Battery") then 
+            -- Disable if you don't have a bettery in root (can't do backpacks, it glitches out atm)
+            if not getPlayer():getInventory():contains("Battery") then
                 disabled = true;
                 disableMessage = "IGUI_MegaDollyTooltip";
             end

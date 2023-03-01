@@ -59,16 +59,17 @@ CheeseMemes.Items.MegaDolly = function(item)
 
     -- Delete a Battery
     playerInv:DoRemoveItem(playerInv:getFirstTypeRecurse("Battery"))
-
+    
     -- 95% of the time, just say dolly wants more. Otherwise, random loot item!
     if ZombRand(100) > 10 then 
         CheeseMemes.Functions.EmitSound(player, "MegaDollyMore" .. random);
     else
         CheeseMemes.Functions.EmitSound(player, "MegaDollyHappy" .. random);
         local allItems = ScriptManager.instance:getAllItems();
-        local randomItem = allItems:get(ZombRand(allItems:size()-1)):getFullName();
-        playerInv:AddItem(randomItem);
+        local randomItem = allItems:get(ZombRand(allItems:size()-1))
+        playerInv:AddItem(randomItem:getFullName());
         CheeseMemes.Functions.Shout(getText("IGUI_MegaDollyLoot"));
+        CheeseMemes.Functions.HaloText(player, getText("IGUI_MegaDollyLoot2", randomItem:getDisplayName()))
     end
 end
 
