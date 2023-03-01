@@ -29,12 +29,12 @@ module Base {
 		EvolvedRecipe = Cake:6;PieSweet:6;ConeIcecream:3,
 		FoodType = NoExplicit,
 		Packaged = TRUE,
-		HungerChange = -6,
+		HungerChange = -4,
 		UnhappyChange = -3,
-		Calories = 210,
-		Carbohydrates = 25,
-		Lipids = 12,
-		Proteins = 3,
+		Calories = 55,
+		Carbohydrates = 7,
+		Lipids = 3,
+		Proteins = 1,
 		WorldStaticModel = KitKatFinger,
     }
 
