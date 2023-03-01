@@ -1,0 +1,12 @@
+module Base {
+    item SpiffoBig {
+	    DisplayCategory = Raccoon,
+		Type = Normal,
+		DisplayName = Big Spiffo,
+		Icon = SpiffoXL,
+		Weight = 5,
+		WorldStaticModel = SpiffoPlushieBig,
+        StaticModel = SpiffoPlushieBig,
+        AttachmentType = SpiffoPlushie,
+	}
+}
