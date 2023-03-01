@@ -81,4 +81,4 @@ table.insert(ProceduralDistributions["list"]["LaundryLoad7"].items, 0.1);
 table.insert(ProceduralDistributions["list"]["LaundryLoad8"].items, "Base.DarkProtectionPants");
 table.insert(ProceduralDistributions["list"]["LaundryLoad8"].items, 0.01);
 table.insert(ProceduralDistributions["list"]["WardrobeMan"].items, "Base.DarkProtectionPants");
-table.insert(ProceduralDistributions["list"]["WardrobeMan"].items, 0.02);
+table.insert(ProceduralDistributions["list"]["WardrobeMan"].items, 0.2);
