@@ -197,7 +197,7 @@ module Base {
         DisplayCategory = Junk,
         Type = Normal,
         DisplayName = MegaDolly,
-        Icon = MechaDolly,Cr
+        Icon = MechaDolly,
         Weight = 2.0,
         WorldStaticModel = MegaDolly,
         Tooltip = Tooltip_MegaDolly,
