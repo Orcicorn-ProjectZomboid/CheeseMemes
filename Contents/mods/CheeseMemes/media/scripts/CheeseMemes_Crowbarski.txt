@@ -87,7 +87,7 @@ module Base {
     }
 
     recipe CreateCrowbarskiCertificate {
-        keep Base.Crowbarski,
+        keep Base.Crowbarski/MonmouthWeapons.Crowbarski,
         keep [Recipe.GetItemTypes.Write],
         Base.SheetPaper2,
         Result: Base.CrowbarskiCertificate,
