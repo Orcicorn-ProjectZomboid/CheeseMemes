@@ -40,7 +40,7 @@ module Base {
         is3D = true, 
         clip {
             file = media/sound/SamuelMoanFemale1.ogg,
-            distanceMax = 2,
+            distanceMax = 1,
             volume = 1.5,
         }
     }
