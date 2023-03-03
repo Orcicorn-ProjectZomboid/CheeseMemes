@@ -1,0 +1,52 @@
+module Base {
+	model CheeseBurgerWatch {
+        mesh = WorldItems/DigitalWatch,
+        texture = watch_burger,
+        scale = 0.4,
+    }
+    
+    sound CheeseBurgerWatchAlarm {
+		category = Item,
+		clip {
+            file = media/sound/cheesealarm.ogg,
+		}
+	}
+
+    item CheeseBurgerWatchRight {
+	    DisplayCategory = Accessory,
+		Type = AlarmClockClothing,
+		DisplayName = BurgerWatchRight,
+		ClothingItem = watch_burgerright,
+		BodyLocation = RightWrist,
+		Icon = burgerwatch,
+		Weight = 0.1,
+        ClothingItemExtra = CheeseBurgerWatchLeft,
+        ClothingItemExtraOption = LeftWrist,
+        clothingExtraSubmenu = RightWrist,
+		Cosmetic = TRUE,
+		AlarmSound = CheeseBurgerWatchAlarm,
+		SoundRadius = 5,
+		MetalValue = 2,
+		Tags = Digital,
+		WorldStaticModel = CheeseBurgerWatch,
+	}
+
+    item CheeseBurgerWatchLeft {
+	    DisplayCategory = Accessory,
+		Type = AlarmClockClothing,
+		DisplayName = BurgerWatchLeft,
+		ClothingItem = watch_burgerleft,
+		BodyLocation = LeftWrist,
+		Icon = burgerwatch,
+		Weight = 0.1,
+        ClothingItemExtra = CheeseBurgerWatchRight,
+        ClothingItemExtraOption = RightWrist,
+        clothingExtraSubmenu = LeftWrist,
+		Cosmetic = TRUE,
+		AlarmSound = CheeseBurgerWatchAlarm,
+		SoundRadius = 5,
+		MetalValue = 2,
+		Tags = Digital,
+		WorldStaticModel = CheeseBurgerWatch,
+	}   
+}

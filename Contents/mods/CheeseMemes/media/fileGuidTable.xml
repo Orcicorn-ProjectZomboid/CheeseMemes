@@ -30,4 +30,14 @@
         <path>media/clothing/clothingItems/underwear_darkprotectionpants.xml</path>
         <guid>d38acb08-63eb-4e6b-a008-88f491d90206</guid>
     </files>
+    <files>
+        <note>Cheese Burger Watch (Left)</note>
+		<path>media/clothing/clothingItems/watch_burgerleft.xml</path>
+		<guid>58811ce1-f522-463f-a03d-a5b47e6c12f6</guid>
+	</files>
+	<files>
+        <note>Cheese Burger Watch (Right)</note>
+		<path>media/clothing/clothingItems/watch_burgerright.xml</path>
+		<guid>d4c9764c-546c-4ab5-ae8b-90e280833ec1</guid>
+	</files>
 </fileGuidTable>
