@@ -98,4 +98,7 @@ IGUI_EN = {
     IGUI_CheeseQuotes57 = "Where's the saloon? I need a sarsaparilla",
     IGUI_CheeseQuotes58 = "Have you read Squad Broken?",
     IGUI_CheeseQuotes59 = "Goonies never say die!",
+
+    -- Overpower Filibuster JPSUV Name to piss off R4K
+    IGUI_VehicleName93explorerjurassic = "The JP Jeep",
 }
