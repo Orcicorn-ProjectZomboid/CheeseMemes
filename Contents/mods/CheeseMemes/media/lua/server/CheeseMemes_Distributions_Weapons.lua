@@ -10,9 +10,9 @@ table.insert(ProceduralDistributions["list"]["SportStorageSticks"].items, "Base.
 table.insert(ProceduralDistributions["list"]["SportStorageSticks"].items, 0.1);
 
 -- Samuel Nightstick
-table.insert(ProceduralDistributions["list"]["BedroomSideTable"].items, "Base.SamuelNighstick");
+table.insert(ProceduralDistributions["list"]["BedroomSideTable"].items, "Base.SamuelNightstick");
 table.insert(ProceduralDistributions["list"]["BedroomSideTable"].items, 1);
-table.insert(ProceduralDistributions["list"]["BedroomDresser"].items, "Base.SamuelNighstick");
+table.insert(ProceduralDistributions["list"]["BedroomDresser"].items, "Base.SamuelNightstick");
 table.insert(ProceduralDistributions["list"]["BedroomDresser"].items, 0.4);
 
 -- Potter Wands (Classrooms)

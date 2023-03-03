@@ -39,6 +39,19 @@ AttachedWeaponDefinitions.Crowbarski = {
 	},
 }
 
+-- Samuel Nightstick
+-- Same as a Knife
+AttachedWeaponDefinitions.SamuelNightstick = {
+	chance = 1,
+	weaponLocation = {"Knife Right Leg"},
+	bloodLocations = {"UpperRight_L"},
+	addHoles = false,
+	daySurvived = 6,
+	weapons = {
+		"Base.SamuelNightstick",
+	},
+}
+
 -- Harry Potter Wands
 -- Wands attached to backs
 AttachedWeaponDefinitions.PotterWandBack = {
