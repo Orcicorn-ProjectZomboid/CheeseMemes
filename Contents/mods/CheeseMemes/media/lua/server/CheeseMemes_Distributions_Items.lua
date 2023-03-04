@@ -205,23 +205,23 @@ table.insert(ProceduralDistributions["list"]["Hobbies"].items, 0.5);
 
 -- Clay Figurine (Axe)
 table.insert(ProceduralDistributions["list"]["CrateToys"].items, "Base.FigurineAxe");
-table.insert(ProceduralDistributions["list"]["CrateToys"].items, 1);
+table.insert(ProceduralDistributions["list"]["CrateToys"].items, 0.8);
 table.insert(ProceduralDistributions["list"]["Gifts"].items, "Base.FigurineAxe");
-table.insert(ProceduralDistributions["list"]["Gifts"].items, 2);
+table.insert(ProceduralDistributions["list"]["Gifts"].items, 1);
 table.insert(ProceduralDistributions["list"]["GigamartToys"].items, "Base.FigurineAxe");
-table.insert(ProceduralDistributions["list"]["GigamartToys"].items, 3);
+table.insert(ProceduralDistributions["list"]["GigamartToys"].items, 1.5);
 table.insert(ProceduralDistributions["list"]["Hobbies"].items, "Base.FigurineAxe");
-table.insert(ProceduralDistributions["list"]["Hobbies"].items, 0.25);
+table.insert(ProceduralDistributions["list"]["Hobbies"].items, 0.12);
 
 -- Clay Figurine (Crowbar)
 table.insert(ProceduralDistributions["list"]["CrateToys"].items, "Base.FigurineCrowbar");
-table.insert(ProceduralDistributions["list"]["CrateToys"].items, 1);
+table.insert(ProceduralDistributions["list"]["CrateToys"].items, 0.8);
 table.insert(ProceduralDistributions["list"]["Gifts"].items, "Base.FigurineCrowbar");
-table.insert(ProceduralDistributions["list"]["Gifts"].items, 2);
+table.insert(ProceduralDistributions["list"]["Gifts"].items, 1);
 table.insert(ProceduralDistributions["list"]["GigamartToys"].items, "Base.FigurineCrowbar");
-table.insert(ProceduralDistributions["list"]["GigamartToys"].items, 3);
+table.insert(ProceduralDistributions["list"]["GigamartToys"].items, 1.5);
 table.insert(ProceduralDistributions["list"]["Hobbies"].items, "Base.FigurineCrowbar");
-table.insert(ProceduralDistributions["list"]["Hobbies"].items, 0.25);
+table.insert(ProceduralDistributions["list"]["Hobbies"].items, 0.12);
 
 -- Cheese Burger Watch
 table.insert(SuburbsDistributions["all"]["bin"].items, "Base.CheeseBurgerWatchLeft");
