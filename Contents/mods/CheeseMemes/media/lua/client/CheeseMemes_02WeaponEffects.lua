@@ -66,10 +66,12 @@ end
 CheeseMemes.Weapons.MeltSomeFaces = function(target, player)
     -- If Target is a zombie, small chance
     if instanceof(target, "IsoZombie") then 
-        if ZombRand(200) == 69 then
-            target:setStaggerBack(true);
+        if ZombRand(200) ~= 69 then
+            -- target:setStaggerBack(true);
             target:SetOnFire();
-            CheeseMemes.Functions.EmitSound(player, "AxelRoseProc1");
+            target:SetOnFire();
+            target:SetOnFire();
+            CheeseMemes.Functions.EmitSound(player, "AxelRoseProcFree");
         end
     elseif instanceof(target, "IsoPlayer") then 
         if ZombRand(100) <= 25 then
@@ -81,7 +83,7 @@ CheeseMemes.Weapons.MeltSomeFaces = function(target, player)
             if getPlayer() == player then       -- Only attacker should shout
                 CheeseMemes.Functions.Say(getText("IGUI_AxelRosePVP1", target:getDisplayName()))
                 CheeseMemes.Functions.Say(getText("IGUI_AxelRosePVP2"));
-                CheeseMemes.Functions.EmitSound(player, "AxelRoseProc2");
+                CheeseMemes.Functions.EmitSound(player, "AxelRoseProcFree");
             end 
         end 
     end

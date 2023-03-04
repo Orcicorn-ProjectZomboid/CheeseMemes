@@ -41,6 +41,17 @@ module Base {
 		}
 	}
 
+	sound AxelRoseProcFree {
+		category = Item,
+		loop = false,
+		is3D = true,
+		clip {
+			file = media/sound/AxelRoseProcFree.ogg,
+			distanceMax = 5,
+			volume = 0.75,
+		}
+	}
+
     item AxelRose {
 	    DisplayCategory = ToolWeapon,
 		MaxRange = 1.2,
