@@ -119,7 +119,8 @@ end
 CheeseMemes.Items.R4KBook = function(player, item)
     if r4kStartedReadingAt == 0 then 
         r4kStartedReadingAt = getTimestamp();
-        CheeseMemes.Functions.HaloText(player, getText("IGUI_R4KBook"))
+        -- CheeseMemes.Functions.HaloText(player, getText("IGUI_R4KBook"))
+        CheeseMemes.Functions.Say(getText("IGUI_R4KBook"))
     else
         if (getTimestamp() - r4kStartedReadingAt) >= 2 or player:isTimedActionInstant() then
             UIManager.setFadeBeforeUI(player:getPlayerNum(), true)
