@@ -76,6 +76,8 @@ end
     @triggers   Events.OnFillWorldObjectContextMenu
 ]]
 CheeseMemes.Events.OnFillWorldContext = function(playerID, context, worldobjects)
+    local countDavid = 0;
+    local countGnomey = 0;
     local player = getSpecificPlayer(playerID);
     local playerX, playerY, playerZ = player:getX(), player:getY(), player:getZ();
 
@@ -84,9 +86,17 @@ CheeseMemes.Events.OnFillWorldContext = function(playerID, context, worldobjects
         for y = playerY - 1, playerY + 1 do 
             local square = getCell():getGridSquare(x, y, playerZ)
             local squareObjects = square:getObjects();
-            for i = 0, squareObjects:size() -1 do 
-                if CheeseMemes.Functions.IsThisDavid(squareObjects:get(i)) then
+            for i = 0, squareObjects:size() -1 do
+                if countDavid == 0 and CheeseMemes.Functions.IsThisDavid(squareObjects:get(i)) then
                     context:addOption(getText("IGUI_SniffDavid"), player, CheeseMemes.Items.SniffDavid, square)
+                    countDavid = countDavid + 1;
+                elseif countGnomey == 0 and CheeseMemes.Functions.IsThisGnomey(squareObjects:get(i)) then 
+                    context:addOption(getText("IGUI_SniffGnomey"), player, CheeseMemes.Items.SniffGnomey, square)
+                    countGnomey = countGnomey + 1
+                end
+                -- If 1 entry for each type is display, display no more.
+                if countDavid > 0 and countGnomey > 0 then
+                    return;
                 end
             end
         end

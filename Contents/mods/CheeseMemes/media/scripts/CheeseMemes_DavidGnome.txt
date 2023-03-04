@@ -9,4 +9,15 @@ module Base {
 			volume = 0.3,
 		}
 	}
+
+	sound GnomeLaughTiny {
+		category = Item,
+		loop = false,
+		is3D = true,
+		clip {
+			file = media/sound/GnomeLaughTiny.ogg,
+			distanceMax = 0,
+			volume = 0.1,
+		}
+	}
 }

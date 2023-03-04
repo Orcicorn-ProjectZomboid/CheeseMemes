@@ -107,6 +107,24 @@ end
 
 
 --[[
+    CheeseMemes.Functions.IsThisGnomey
+    Checks if an object is a Gnomey Variant from Dylan's Tiles. Since it's a world object we can't
+    ask for the type as it's just moveable. We have to check if it's sprite matches
+    @params     IsoObject       Required        The Object to test
+    @returns    boolean                        True/False if it is Gnomey/Gnomey-Like
+    @trigger    CheeseMemes.Events.OnFillWorldContext
+]]
+CheeseMemes.Functions.IsThisGnomey = function(object)
+    local sprite = object:getSprite():getName() or object:getSpriteName();
+    if sprite == "DylansGardenStuff01_34" or sprite == "DylansGardenStuff01_35" or sprite == "DylansGardenStuff01_45" or sprite == "DylansGardenStuff01_46" then 
+        return true;
+    else
+        return false;
+    end
+end
+
+
+--[[
     CheeseMemes.Functions.NotableDates 
     Checks the current in-game date against a list of important dates.
     if an important dates occurs, then produce a little halo text

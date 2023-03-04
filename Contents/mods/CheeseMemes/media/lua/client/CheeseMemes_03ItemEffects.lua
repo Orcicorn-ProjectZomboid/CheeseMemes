@@ -169,3 +169,27 @@ CheeseMemes.Items.SniffDavid = function(player, square)
         CheeseMemes.Functions.HaloText(player, getText("IGUI_SniffDavidLine" .. random));
     end
 end
+
+CheeseMemes.Items.SniffGnomey = function(player, square)
+    -- Spam protection
+    if lastGnomeSniff > 0 and (getTimestamp() - lastGnomeSniff) < 4 then 
+        return;
+    end
+   
+    player:playEmote("followme");
+    CheeseMemes.Functions.PlaySound(square, "GnomeLaughTiny");
+    lastGnomeSniff = getTimestamp();
+    
+    -- Handle the reaction
+    if ZombRand(100) < 5 then 
+        CheeseMemes.Functions.Shout(getText("IGUI_SniffGnomeyShout"));
+        if player:getStats():getDrunkenness() < 24 then 
+            player:getStats():setDrunkenness(24);
+        end
+    else
+        local random = ZombRand(0, 6)
+        if random < 1 then random = 1; end
+        if random > 5 then random = 5; end
+        CheeseMemes.Functions.HaloText(player, getText("IGUI_SniffGnomeyLine" .. random));
+    end
+end

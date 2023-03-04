@@ -37,6 +37,14 @@ IGUI_EN = {
     IGUI_SniffDavidLine4 = "I should stick to panties",
     IGUI_SniffDavidLine5 = "Smells like grandma's closet",
     IGUI_SniffDavidShout = "I AM A DEGENERATE GNOME SNIFFER",
+    IGUI_SniffGnomey = "Sniff Tiny Gnome",
+    IGUI_SniffGnomeyLine1 = "I don't think they enjoyed that",
+    IGUI_SniffGnomeyLine2 = "I probably shouldn't do that again",
+    IGUI_SniffGnomeyLine3 = "Smells like prime numbers",
+    IGUI_SniffGnomeyLine4 = "Bet they taste like happiness",
+    IGUI_SniffGnomeyLine5 = "Hmm, he's just about the right size...",
+    IGUI_SniffGnomeyShout = "I LIKE LITTLE GNOMES AND I CAN NOT LIE",
+
 
     IGUI_CheeseQuotes1 = "UP TOP!",
     IGUI_CheeseQuotes2 = "Hiya Hiya HIYAAAAAAAAHHHHHH",
