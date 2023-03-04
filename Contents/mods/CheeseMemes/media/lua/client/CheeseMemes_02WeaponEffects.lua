@@ -66,7 +66,7 @@ end
 CheeseMemes.Weapons.MeltSomeFaces = function(target, player)
     -- If Target is a zombie, small chance
     if instanceof(target, "IsoZombie") then 
-        if ZombRand(200) ~= 69 then
+        if ZombRand(200) == 69 then
             -- target:setStaggerBack(true);
             target:SetOnFire();
             target:SetOnFire();
