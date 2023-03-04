@@ -193,6 +193,6 @@ table.insert(ProceduralDistributions["list"]["OfficeDeskHome"].items, 0.5);
 -- CHEESE POSTER CD ********************************************
 -- *************************************************************
 table.insert(ProceduralDistributions["list"]["ClassroomDesk"].items, "Base.DiscCheese1");
-table.insert(ProceduralDistributions["list"]["ClassroomDesk"].items, 0.001);
+table.insert(ProceduralDistributions["list"]["ClassroomDesk"].items, 0.00001);
 table.insert(ProceduralDistributions["list"]["OfficeDeskHome"].items, "Base.DiscCheese1");
-table.insert(ProceduralDistributions["list"]["OfficeDeskHome"].items, 0.5);
+table.insert(ProceduralDistributions["list"]["OfficeDeskHome"].items, 0.05);
