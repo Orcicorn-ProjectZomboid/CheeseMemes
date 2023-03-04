@@ -63,6 +63,9 @@ CheeseMemes.Recipes.Crowbarski = function(items, result, player)
         if not items:get(0):isBroken() then
             crowbarValue = CheeseMemes.Functions.FormatCommas((10000 - crowbarID) * 4269)
             crowbarNote = "";
+            -- Write the value on the crowbar (silly scammers)
+            items:get(0):setName(getText("IGUI_Crowbarski_Name", crowbarValue));
+            items:get(0):setCustomName(true);
         end
     end
 

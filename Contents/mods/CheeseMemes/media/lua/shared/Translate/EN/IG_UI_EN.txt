@@ -22,6 +22,7 @@ IGUI_EN = {
     IGUI_Crowbarski_Line05 = "Estimated value $%1.00 USD%2",
     IGUI_Crowbarski_Line06 = "Verified %1",
     IGUI_Crowbarski_Line07 = "Authenticity guaranteed by WHCD Inc https://wellhungchubbydudes.com/",
+    IGUI_Crowbarski_Name = "Crowbarski ($%1)",
     IGUI_DammitPoss = "Dammit Poss!",
     IGUI_MegaDolly = "IT'S ALIVVVEEE!!!!!!",
     IGUI_MegaDollyFeed = "Feed",
