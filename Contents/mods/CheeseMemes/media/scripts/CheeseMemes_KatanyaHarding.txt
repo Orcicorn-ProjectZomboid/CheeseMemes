@@ -1,4 +1,10 @@
 module Base {
+	model JeffGluey {
+		mesh = WorldItems/Glue,
+		texture = JeffGluey,
+		scale = 0.4,
+	}
+
 	model KatanyaHarding {
 		mesh = Weapons/2Handed/Katana,
 		texture = weapons/KatanyaHarding,
@@ -75,6 +81,18 @@ module Base {
 		Tooltip = Tooltip_KatanyaHarding,
 	}
 
+	item JeffGluey {
+		DisplayCategory = Material,
+        Weight = 0.1,
+        Type = Drainable,
+        UseDelta = 1.0,
+        UseWhileEquipped = FALSE,
+        DisplayName = JeffGluey,
+        Icon = JeffGluey,
+        Tooltip = Tooltip_JeffGluey,
+        WorldStaticModel = JeffGluey,
+	}
+
 	recipe ConvertToKatanyaHarding {
 		keep Hammer,
 		Base.Katana,
@@ -84,5 +102,21 @@ module Base {
 		AnimNode: BuildLow,
 		Prop1: Hammer,
 		Sound: KatanyaHardingCrafting,
+	}
+
+	recipe CreateJeffGluey {
+		keep [Recipe.GetItemTypes.SharpKnife],
+		Base.CorpseMale/Base.CorpseFemale,
+		Base.Glue=5,
+		Result: Base.JeffGluey,
+		Time: 90.0,
+		CanBeDoneFromFloor:true,
+		Sound: BloodSplatter,
+		AnimNode: Disassemble,
+	}
+
+	fixing Fix KatanyaHarding {
+		Require: KatanyaHarding,
+		Fixer: JeffGluey=1,
 	}
 }

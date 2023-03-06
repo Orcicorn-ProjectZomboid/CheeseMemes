@@ -49,6 +49,7 @@ ItemName_EN = {
     ItemName_Base.FigurineCrowbar = "Clay Crowbar Figurine",
     ItemName_Base.FigurineSpiffo = "Clay Spiffo Figurine",
     ItemName_Base.GlassesCheeseGamer = "Gamer Glasses",
+    ItemName_Base.JeffGluey = "A Bottle of Jeff-Gluey",
     ItemName_Base.KatanyaHarding = "Katanya Harding",
     ItemName_Base.KitKatBar = "Kit Kat",
     ItemName_Base.KitKatFinger = "Finger of Kit Kat",

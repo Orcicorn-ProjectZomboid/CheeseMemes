@@ -23,6 +23,7 @@ Tooltip_EN = {
     Tooltip_DiscCheese = "Insert into a Computer",
     Tooltip_Figurines = "Made with love, SheWolf",
     Tooltip_GlassesCheeseGamer = "Courtesy of Ubisoft",
+    Tooltip_JeffGluey = "Slightly sticky, kind of vile.<br>Definitely not Jeff Gillooly",
     Tooltip_KatanyaHarding = ""Property of Jeff Gillooly"",
     Tooltip_KitKatBar = "Break me off a piece of that Fancy Feast",
     Tooltip_MegaDolly = "FEED ME BATTERY",
