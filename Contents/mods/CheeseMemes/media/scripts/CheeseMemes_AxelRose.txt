@@ -102,6 +102,15 @@ module Base {
         Tooltip = Tooltip_AxelRose,
     }
 
+	fixing Fix AxelRose {
+		Require: AxelRose,
+		GlobalItem: DuctTape=5,
+		Fixer: GuitarElectricRed=1,
+		Fixer: GuitarElectricBlack=1,
+		Fixer: GuitarElectricBlue=1,
+		Fixer: GuitarAcoustic=1,
+	}
+
 	recipe ConvertToAxelRose {
 		Base.Axe,
 		destroy Base.BlowTorch=1,
