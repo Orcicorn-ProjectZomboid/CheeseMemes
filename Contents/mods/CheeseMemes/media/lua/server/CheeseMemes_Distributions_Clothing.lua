@@ -86,6 +86,10 @@ table.insert(ProceduralDistributions["list"]["WardrobeMan"].items, 0.2);
 -- Cheese Burger Watch
 table.insert(SuburbsDistributions["all"]["bin"].items, "Base.CheeseBurgerWatchLeft");
 table.insert(SuburbsDistributions["all"]["bin"].items, 0.1);
+table.insert(SuburbsDistributions["all"]["inventorymale"].items, "Base.CheeseBurgerWatchLeft");
+table.insert(SuburbsDistributions["all"]["inventorymale"].items, 0.001);
+table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, "Base.CheeseBurgerWatchLeft");
+table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, 0.001);
 table.insert(ProceduralDistributions["list"]["Antiques"].items, "Base.CheeseBurgerWatchLeft");
 table.insert(ProceduralDistributions["list"]["Antiques"].items, 0.5);
 table.insert(ProceduralDistributions["list"]["DepartmentStoreWatches"].items, "Base.CheeseBurgerWatchLeft");
