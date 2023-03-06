@@ -143,4 +143,11 @@ module Base {
         Tooltip = Tooltip_SamuelNightstick,
     }
 
+    fixing Fix SamuelNightstick {
+        Require: SamuelNightstick,
+        GlobalItem: ToiletPaper=16,
+        Fixer: CarBattery2=100000,
+        Fixer: CarBattery3=100000,
+        Fixer: CarBattery1=100000,
+    }
 }
