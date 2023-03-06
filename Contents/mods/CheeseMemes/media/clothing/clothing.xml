@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<outfitManager>
+    <m_MaleOutfits> <!-- Dark Moriarti -->
+        <m_Name>CMDarkMoriarti</m_Name>
+        <m_Guid>d8cb673a-c8a7-4c8f-b56a-443f0880d5f2</m_Guid>
+        <m_Top>false</m_Top>
+        <m_Pants>false</m_Pants>
+		<m_items> <!-- Burger Watch -->
+			<itemGUID>58811ce1-f522-463f-a03d-a5b47e6c12f6</itemGUID>
+		</m_items>
+		<m_items> <!-- Protection Pants-->
+            <itemGUID>d38acb08-63eb-4e6b-a008-88f491d90206</itemGUID>
+		</m_items>
+        <m_items> <!-- Hazmat Suit -->
+            <itemGUID>430fb60d-a1be-48bd-a6c7-3a19b3116fe5</itemGUID>
+        </m_items>
+    </m_MaleOutfits>
+</outfitManager>

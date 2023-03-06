@@ -95,6 +95,24 @@ AttachedWeaponDefinitions.PotterWandBelt = {
 	},
 }
 
+-- Dark has a firebomb in his belt
+AttachedWeaponDefinitions.DarkFireBomb = {
+	id = "DarkFireBomb",
+	chance = 100,
+	outfit = {"CMDarkMoriarti"},
+	weaponLocation = {"Belt Right Upside"},
+	bloodLocations = nil,
+	addHoles = false,
+	daySurvived = 21,
+	weapons = {
+		"Base.AerosolBomb",
+		"Base.FlameTrap",
+		"Base.PipeBomb",
+		"Base.SmokeBomb",
+		"Base.WaterBottlePetrol",
+	}
+}
+
 -- Outfit Definitions for Teachers and Students
 AttachedWeaponDefinitions.attachedWeaponCustomOutfit.Student = {
 	chance = 2;
@@ -110,4 +128,13 @@ AttachedWeaponDefinitions.attachedWeaponCustomOutfit.Teacher = {
 	weapons = {
 		AttachedWeaponDefinitions.PotterWandBack,
 	},
+}
+
+-- Custom Weapon attachments for Dark
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.CMDarkMoriarti = {
+	chance = 100;
+	maxitem = 1;
+	weapons = {
+		AttachedWeaponDefinitions.DarkFireBomb,
+	}
 }

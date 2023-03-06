@@ -40,4 +40,9 @@
 		<path>media/clothing/clothingItems/watch_burgerright.xml</path>
 		<guid>d4c9764c-546c-4ab5-ae8b-90e280833ec1</guid>
 	</files>
+    <files>
+        <note>LOAD Vanilla HazMat Suit</note>
+        <path>media/clothing/clothingItems/HazmatSuit.xml</path>
+		<guid>430fb60d-a1be-48bd-a6c7-3a19b3116fe5</guid>
+    </files>
 </fileGuidTable>
