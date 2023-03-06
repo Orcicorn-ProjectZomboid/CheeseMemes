@@ -60,6 +60,13 @@ module Base {
 		Tooltip = Tooltip_Crowbarski,
     }
 
+    fixing CrowbarskiFixer {
+        Require: Crowbarski,
+        GlobalItem: Glue=5,
+        Fixer: GlassWine=50,
+        Fixer: Teacup=30,
+    }
+
     item CrowbarskiNecklace {
         DisplayCategory = Accessory,
         Type = Clothing,

@@ -54,19 +54,22 @@ end
 CheeseMemes.Recipes.Crowbarski = function(items, result, player)
     -- Some Defaults (Incase item missing)
     local crowbarID = 1977;
-    local crowbarValue = 69;
+    local crowbarValue = 0;
     local crowbarNote = " (" .. getText("UI_ModManager_List_Tooltip_Broken") .. ")";
 
     -- Work out the Crowbar's Details (ID, Value)
     if items then 
         crowbarID = tonumber(string.sub(items:get(0):getID(), -4))
         if not items:get(0):isBroken() then
-            crowbarValue = CheeseMemes.Functions.FormatCommas((10000 - crowbarID) * 4269)
+            crowbarValue = ((10000 - crowbarID) * 4269);                                    -- Actual Value
+            crowbarValue = math.floor(crowbarValue / items:get(0):getHaveBeenRepaired());   -- Deprecated by Repairs
+            crowbarValue = CheeseMemes.Functions.FormatCommas(crowbarValue);                -- Formatted for readability
             crowbarNote = "";
-            -- Write the value on the crowbar (silly scammers)
-            items:get(0):setName(getText("IGUI_Crowbarski_Name", crowbarValue));
-            items:get(0):setCustomName(true);
+            print(items:get(0):getHaveBeenRepaired())
         end
+        -- Append the Value to the Name to avoid scammers
+        items:get(0):setName(getText("IGUI_Crowbarski_Name", crowbarValue));
+        items:get(0):setCustomName(true);
     end
 
     -- Format the Certificate of Authenticity Text
