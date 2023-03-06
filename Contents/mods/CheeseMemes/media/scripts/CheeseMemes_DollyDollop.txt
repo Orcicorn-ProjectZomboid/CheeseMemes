@@ -1,0 +1,162 @@
+module Base {
+    /* 0.005 */
+    model DollopDollyBigLeft {
+		mesh = WorldItems/DollyDollopLeft,
+		texture = DollopDollies,
+		scale = 0.01,
+	}
+
+	model DollopDollyBigRight {
+		mesh = WorldItems/DollyDollopRight,
+		texture = DollopDollies,
+		scale = 0.01,
+	}
+
+    model DollopDollyLeft {
+		mesh = WorldItems/DollyDollopLeft,
+		texture = DollopDollies,
+		scale = 0.005,
+	}
+
+	model DollopDollyRight {
+		mesh = WorldItems/DollyDollopRight,
+		texture = DollopDollies,
+		scale = 0.005,
+	}
+
+     model DollopDollyTinyLeft {
+		mesh = WorldItems/DollyDollopLeft,
+		texture = DollopDollies,
+		scale = 0.0025,
+	}
+
+	model DollopDollyTinyRight {
+		mesh = WorldItems/DollyDollopRight,
+		texture = DollopDollies,
+		scale = 0.0025,
+	}
+
+	item DollopDollyBigLeft {
+		DisplayCategory = Junk,
+		Type = Normal,
+		DisplayName = DollopDollyBigLeft,
+		Icon = DollopDolly,
+		Weight = 5.0,
+		WorldStaticModel = DollopDollyBigLeft,
+	}
+
+    item DollopDollyLeft {
+		DisplayCategory = Junk,
+		Type = Normal,
+		DisplayName = DollopDollyLeft,
+		Icon = DollopDolly,
+		Weight = 1.0,
+		WorldStaticModel = DollopDollyLeft,
+	}
+
+    item DollopDollyTinyLeft {
+		DisplayCategory = Junk,
+		Type = Normal,
+		DisplayName = DollopDollyTinyLeft,
+		Icon = DollopDolly,
+		Weight = 1.0,
+		WorldStaticModel = DollopDollyTinyLeft,
+	}
+
+	item DollopDollyBigRight {
+		DisplayCategory = Junk,
+		Type = Normal,
+		DisplayName = DollopDollyBigRight,
+		Icon = DollopDolly,
+		Weight = 5.0,
+		WorldStaticModel = DollopDollyBigRight,
+	}
+
+    item DollopDollyRight {
+		DisplayCategory = Junk,
+		Type = Normal,
+		DisplayName = DollopDollyRight,
+		Icon = DollopDolly,
+		Weight = 1.0,
+		WorldStaticModel = DollopDollyRight,
+	}
+
+    item DollopDollyTinyRight {
+		DisplayCategory = Junk,
+		Type = Normal,
+		DisplayName = DollopDollyTinyRight,
+		Icon = DollopDolly,
+		Weight = 1.0,
+		WorldStaticModel = DollopDollyTinyRight,
+	}
+
+    recipe CreateDollopDollyBig {
+        keep [Recipe.GetItemTypes.Hammer],
+        Base.BigDolly=10,
+        Base.Plank=4,
+        Base.Nails=4,
+        Base.Glue=1,
+        Result: DollopDollyBigLeft,
+        SkillRequired: Carpentry=1,
+        Time: 90.0,
+    }
+
+    recipe CreateDollopDolly {
+        keep [Recipe.GetItemTypes.Hammer],
+        Base.Doll=10,
+        Base.Plank=4,
+        Base.Nails=4,
+        Base.Glue=1,
+        Result: DollopDollyLeft,
+        SkillRequired: Carpentry=1,
+        Time: 90.0,
+    }
+
+    recipe CreateDollopDollyTiny {
+        keep [Recipe.GetItemTypes.Hammer],
+        Base.TinyDolly=10,
+        Base.Plank=4,
+        Base.Nails=4,
+        Base.Glue=1,
+        Result: DollopDollyTinyLeft,
+        SkillRequired: Carpentry=1,
+        Time: 90.0,
+    }
+
+    recipe FlipDollyBigLeft {
+        DollopDollyBigLeft,
+        Result: DollopDollyBigRight,
+        Time: 1.0,
+    }
+
+    recipe FlipDollyBigRight {
+        DollopDollyBigRight,
+        Result: DollopDollyBigLeft,
+        Time: 1.0,
+    }
+
+    recipe FlipDollyLeft {
+        DollopDollyLeft,
+        Result: DollopDollyRight,
+        Time: 1.0,
+    }
+
+    recipe FlipDollyRight {
+        DollopDollyRight,
+        Result: DollopDollyLeft,
+        Time: 1.0,
+    }
+
+    recipe FlipDollyTinyLeft {
+        DollopDollyTinyLeft,
+        Result: DollopDollyTinyRight,
+        Time: 1.0,
+    }
+
+    recipe FlipDollyTinyRight {
+        DollopDollyTinyRight,
+        Result: DollopDollyTinyLeft,
+        Time: 1.0,
+    }
+
+}
