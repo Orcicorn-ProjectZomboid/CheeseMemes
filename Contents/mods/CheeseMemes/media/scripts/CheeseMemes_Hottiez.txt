@@ -1,0 +1,19 @@
+module Base {
+	model HottiezMagazineGround {
+		mesh = WorldItems/Magazine,
+		texture = WorldItems/Hottiez,
+		scale = 0.4,
+	}
+
+    item HottieZ {
+        DisplayCategory = Literature,
+        Weight	=	0.2,
+        Type	=	Literature,
+        DisplayName	=	HottieZ,
+        StressChange	=	-50,
+        Icon	=	MagazineNudie1,
+        BoredomChange	=	-40,
+        StaticModel = Magazine,
+        WorldStaticModel = HottiezMagazineGround,
+    }
+}
