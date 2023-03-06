@@ -82,3 +82,15 @@ table.insert(ProceduralDistributions["list"]["LaundryLoad8"].items, "Base.DarkPr
 table.insert(ProceduralDistributions["list"]["LaundryLoad8"].items, 0.01);
 table.insert(ProceduralDistributions["list"]["WardrobeMan"].items, "Base.DarkProtectionPants");
 table.insert(ProceduralDistributions["list"]["WardrobeMan"].items, 0.2);
+
+-- Cheese Burger Watch
+table.insert(SuburbsDistributions["all"]["bin"].items, "Base.CheeseBurgerWatchLeft");
+table.insert(SuburbsDistributions["all"]["bin"].items, 0.1);
+table.insert(ProceduralDistributions["list"]["Antiques"].items, "Base.CheeseBurgerWatchLeft");
+table.insert(ProceduralDistributions["list"]["Antiques"].items, 0.5);
+table.insert(ProceduralDistributions["list"]["DepartmentStoreWatches"].items, "Base.CheeseBurgerWatchLeft");
+table.insert(ProceduralDistributions["list"]["DepartmentStoreWatches"].items, 2);
+table.insert(ProceduralDistributions["list"]["JewelryWrist"].items, "Base.CheeseBurgerWatchLeft");
+table.insert(ProceduralDistributions["list"]["JewelryWrist"].items, 2);
+table.insert(ProceduralDistributions["list"]["StoreDisplayWatches"].items, "Base.CheeseBurgerWatchLeft");
+table.insert(ProceduralDistributions["list"]["StoreDisplayWatches"].items, 2);
