@@ -90,6 +90,12 @@ table.insert(ProceduralDistributions["list"]["LivingRoomShelfNoTapes"].items, "B
 table.insert(ProceduralDistributions["list"]["LivingRoomShelfNoTapes"].items, 0.1);
 table.insert(ProceduralDistributions["list"]["LivingRoomSideTable"].items, "Base.CharliePosterBook");
 table.insert(ProceduralDistributions["list"]["LivingRoomSideTable"].items, 0.01);
+table.insert(ProceduralDistributions["list"]["LivingRoomSideTableNoRemote"].items, "Base.CharliePosterBook");
+table.insert(ProceduralDistributions["list"]["LivingRoomSideTableNoRemote"].items, 0.01);
+table.insert(ProceduralDistributions["list"]["VacationStuff"].items, "Base.CharliePosterBook");
+table.insert(ProceduralDistributions["list"]["VacationStuff"].items, 1);
+table.insert(ProceduralDistributions["list"]["OfficeDeskHome"].items, "Base.CharliePosterBook");
+table.insert(ProceduralDistributions["list"]["OfficeDeskHome"].items, 0.5);
 
 -- *************************************************************
 -- ZOMBIE POSTERS **********************************************
