@@ -21,7 +21,7 @@ module Base {
 		clip {
 			file = media/sound/KatanyaHardingCrafting.ogg,
 			distanceMax = 6,
-			volume = 0.7,
+			volume = 0.45,
 		}
 	}
 
@@ -32,7 +32,7 @@ module Base {
 		clip {
 			file = media/sound/FemaleZombieWhy.ogg,
 			distanceMax = 2,
-			volume = 1.2,
+			volume = 0.85,
 		}
 	}
 
