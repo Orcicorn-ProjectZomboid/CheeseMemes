@@ -105,9 +105,6 @@ AttachedWeaponDefinitions.DarkFireBomb = {
 	addHoles = false,
 	daySurvived = 21,
 	weapons = {
-		"Base.AerosolBomb",
-		"Base.FlameTrap",
-		"Base.PipeBomb",
 		"Base.SmokeBomb",
 		"Base.WaterBottlePetrol",
 	}
