@@ -66,7 +66,7 @@ end
 CheeseMemes.Weapons.MeltSomeFaces = function(target, player)
     -- If Target is a zombie, small chance
     if instanceof(target, "IsoZombie") then 
-        if ZombRand(200) == 69 then
+        if ZombRand(400) == 69 then
             -- target:setStaggerBack(true);
             target:SetOnFire();
             target:SetOnFire();
@@ -101,7 +101,7 @@ end
 CheeseMemes.Weapons.Moan = function(target)
     -- Must be a zombie and must pass a % random check
     if not instanceof(target, "IsoZombie") then return; end;
-    if ZombRand(100) > 10 then return; end;
+    if ZombRand(100) > 5 then return; end;
     -- Determine the Male/Female sound effect file name
     local sound = "SamuelMoan";
     if target:isFemale() then 
