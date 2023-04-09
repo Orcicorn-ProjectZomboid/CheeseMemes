@@ -26,7 +26,7 @@ module Base {
 		clip {
 			file = media/sound/AxelRoseProc1.ogg,
 			distanceMax = 5,
-			volume = 0.65,
+			volume = 0.5,
 		}
 	}
 
@@ -37,7 +37,7 @@ module Base {
 		clip {
 			file = media/sound/AxelRoseProc2.ogg,
 			distanceMax = 5,
-			volume = 0.8,
+			volume = 0.5,
 		}
 	}
 
@@ -48,7 +48,7 @@ module Base {
 		clip {
 			file = media/sound/AxelRoseProcFree.ogg,
 			distanceMax = 5,
-			volume = 0.75,
+			volume = 0.5,
 		}
 	}
 
