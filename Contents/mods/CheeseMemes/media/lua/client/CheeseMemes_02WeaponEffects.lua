@@ -64,6 +64,7 @@ end
     @trigger    CheeseMemes.Events.OnHitEvents
 ]]
 CheeseMemes.Weapons.MeltSomeFaces = function(target, player)
+    local PVEProcSounds = 3;            -- match the # of sounds in axel definitions
     -- If Target is a zombie, small chance
     if instanceof(target, "IsoZombie") then 
         if ZombRand(400) == 69 then
@@ -71,7 +72,12 @@ CheeseMemes.Weapons.MeltSomeFaces = function(target, player)
             target:SetOnFire();
             target:SetOnFire();
             target:SetOnFire();
-            CheeseMemes.Functions.EmitSound(player, "AxelRoseProcFree");
+            -- Pick a random proc sounds
+            local random = ZombRand(PVEProcSounds+1);
+            if random < 1 then random = 1; end
+            if random > PVEProcSounds then random = PVEProcSounds; end
+            -- Play the sound
+            CheeseMemes.Functions.EmitSound(player, "AxelRoseProcFree".. random);
         end
     elseif instanceof(target, "IsoPlayer") then 
         if ZombRand(100) <= 25 then

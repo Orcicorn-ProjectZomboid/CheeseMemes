@@ -41,14 +41,36 @@ module Base {
 		}
 	}
 
-	sound AxelRoseProcFree {
+	sound AxelRoseProcFree1 {
 		category = Item,
 		loop = false,
 		is3D = true,
 		clip {
-			file = media/sound/AxelRoseProcFree.ogg,
+			file = media/sound/AxelRoseProcFree1.ogg,
 			distanceMax = 5,
 			volume = 0.5,
+		}
+	}
+
+	sound AxelRoseProcFree2 {
+		category = Item,
+		loop = false,
+		is3D = true,
+		clip {
+			file = media/sound/AxelRoseProcFree2.ogg,
+			distanceMax = 5,
+			volume = 0.45,
+		}
+	}
+
+	sound AxelRoseProcFree3 {
+		category = Item,
+		loop = false,
+		is3D = true,
+		clip {
+			file = media/sound/AxelRoseProcFree3.ogg,
+			distanceMax = 5,
+			volume = 0.4,
 		}
 	}
 
