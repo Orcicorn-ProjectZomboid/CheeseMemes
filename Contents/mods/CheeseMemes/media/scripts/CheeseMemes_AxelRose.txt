@@ -85,7 +85,7 @@ module Base {
 		SwingAmountBeforeImpact = 0.002,
 		Categories = Axe,
 		ConditionLowerChanceOneIn = 35,
-		Weight = 4,
+		Weight = 3,
 		SplatNumber = 3,
 		PushBackMod = 0.3,
 		SubCategory = Swinging,
